@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="testing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    @media screen and (max-width:800px) {
+    .div2{
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0 !important;
+    }
+    .fourthpage{
+        padding-top: 0 !important;
+    }
+    .sixthpage{
+        padding: 20px !important;
+        display: block !important;
+        
+    }
+    .sixdiv{
+        width: 90% !important;
+        padding-top: 20px !important;
+    }
+    .seventhpage{
+      display: block !important;
+      padding: 20px !important;
+    }
+
+}
+</style>
+<body>
+    <nav class="navbar navbar sticky-top bg-body-tertiary bg-light shadow ">
+        <div class="container col-12">
+          <div class="d-flex align-items-center first">
+            <a class="navbar-brand active" >
+                <img style="width: 150px;" class=" img-fluid free-logo" src="freelancer-logo.svg" alt="">
+            </a>
+              <div class="d-none d-md-none d-lg-block"> 
+              <a class="mx-2 text-dark text-decoration-none" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\howitworks.html">How it works</a>
+              <a class="mx-2 text-dark text-decoration-none" href="...">Browse jobs</a>
+            </div>
+          </div>
+            <div class="d-flex navbtn" role="search">          
+               <button class="btn btn" type="submit"  data-target="">
+                <a class="text-dark text-decoration-none" href="file:///C:/Users/HP/Desktop/MY%20PROJECT/Freelancer/loginpage.html">Log In</a></button> 
+              <button class="btn btn" type="submit">
+                <a class="text-dark text-decoration-none" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\signup.html">Sign Up</a></button>
+              <button class="btn btn-danger d-none d-lg-block" style="background-color: rgb(230,2,120);" type="submit">
+                <a class="text-dark text-decoration-none " href="..">Post a Project</a></button>
+            </div>
+        </div>
+        </nav>
+
+    <div class="d-flex col-12   bg-dark text-light px-5 gap-5 div2 w-100 d-block" >
+            <div class="btn1">
+              <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Find Jobs
+              </button>
+              <ul class="dropdown-menu bg-light text-dark px-3 text-start">
+                <div class="Skills">
+                <li class="d-flex justify-content-between align-items-center text-start">By Skill<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="Skillsdrop bg-light text-dark radius-3 ">
+                    <div class="gd">
+                  <li class="d-flex justify-content-between align-items-center text-start">Find Graphic Design Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="gddropdown bg-light text-dark">
+                      <li>Find logo design job</li>
+                      <li>Find web design job</li>
+                      <li>Find banner design job</li>
+                      <li>Find 3D modelling jobs</li>
+                      <li>Find photoshop job</li>
+                      <li>Find illustration job</li>
+                      <li>Find 3d animation job</li>
+                      <li>Find 2d animation job</li>
+                      <li>Find other graphic design job</li>
+                    </ul>
+                  </div>
+  
+                  <div class="wj">
+                  <li class="d-flex justify-content-between align-items-center text-start">Find Website Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                        <ul class="wjdropdown bg-light text-dark">
+                        <li>  Find PHP Jobs</li>
+                        <li>Find Javascript Jobs</li>
+                        <li> Find .NET Jobs</li>
+                        <li> Find CSS Jobs</li>
+                        <li> Find Amazon Web Services Jobs</li>
+                        <li>Find HTML5 Jobs</li>
+                        <li> Find Wordpress Jobs</li>
+                        <li>  Find Wix Jobs</li>
+                        <li>  Find Squarespace Jobs</li>
+                        <li>Find Shopify Jobs</li>
+                        <li>Find Magento Jobs</li>
+                        <li> Find Database Development Jobs</li>
+                        <li> Find Other Website Jobs</li>
+                        </ul>
+                    </div>
+  
+                    <div class="mobileapp">
+                  <li class="d-flex justify-content-between align-items-center text-start">Find Mobile App Development Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="mobileappdropdown bg-light text-dark">
+                     <li> Find iPhone App Jobs</li>
+                     <li> Find Android App Jobs</li>
+                     <li>Find Flutter Jobs</li>
+                    <li> Find Xamarin Jobs</li>
+                    <li>Find PhoneGap Jobs</li>
+                    <li> Find Other Mobile App Development Jobs</li>
+                    </ul>
+                  </div>
+  
+                  <div class="sd">
+                  <li class="d-flex justify-content-between align-items-center text-start">Find Software Development Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="sddropdown bg-light text-dark">
+                    <li>Find Linux Jobs</li>
+                    <li>Find C++ Software Development Jobs</li>
+                    <li> Find C# Software Development Jobs</li>
+                    <li>Find Objective C Software Development Jobs</li>
+                    <li> Find Ruby On Rails Software Development Jobs</li>
+                    <li> Find Python Software Development Jobs</li>
+                    <li> Find Java Software Development Jobs</li>
+                    <li>Find Other Software Development Jobs</li>
+                  </ul>
+                </div>
+  
+                <div class="int">
+                  <li class="d-flex justify-content-between align-items-center text-start">Find Internet Marketing Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="intdropdown bg-light text-dark">
+                    <li> Find Social Media Marketing Jobs</li>
+                    <li>Find Other Internet Marketing Jobs</li>
+                  </ul>
+                </div>
+  
+                  <li>Find Data Entry Jobs</li>
+                  <li>Find SEO Jobs</li>
+  
+                  <div class="writing">
+                  <li class="d-flex justify-content-between align-items-center text-start">Find Writing Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="writingdropdown bg-light text-dark">
+                    Find Copywriting Jobs
+                    Find Ghostwriting Jobs
+                    Find Article Writing Jobs
+                    Find Other Writing Jobs
+                  </ul>
+                </div>
+  
+                  <li>Find Legal Jobs</li>
+                  <li>Find Finance Jobs</li>
+                  <li>Find Manufacturing Jobs</li>
+                  <li>Find Logistics Jobs</li>
+                  </ul>
+                </div>
+  
+                <!-- BY LANGUAGE -->
+                <div class="bl">
+                <li class="d-flex justify-content-between align-items-center text-start">By Language<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="bldropdown bg-light text-dark">
+                    <li> Find Freelance Jobs In English</li>
+                    <li>Find Freelance Jobs In Spanish</li>
+                    <li>Find Freelance Jobs In Portugese</li>
+                    <li>Find Freelance Jobs In French</li>
+                    <li>Find Freelance Jobs In German</li>
+                    <li>Find Freelancer Jobs in Other Languages</li>
+                  </ul>
+                <li>Featured Jobs</li>
+                <li>Find Contest</li>
+              </div>
+              </ul>
+            </div>
+  
+            <!-- BTN 2 -->
+            <div class="btn2">
+              <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Hire Freelancers
+              </button>
+              <ul class="dropdown-menu2 bg-light text-dark text-start radius-3">
+                <div class="skill2">
+                <li class="d-flex justify-content-between align-items-center text-start">By Skill<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="skill2drop bg-light text-dark">
+                    <div class="gd2">
+                    <li class="d-flex justify-content-between align-items-center text-start"> Hire Graphic Designers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="gd2dropdown bg-light text-dark">
+                      Hire Photoshop Designers
+                      Hire Illustrators
+                      Hire Motion Graphics Designers
+                      Hire 2D Animators
+                      Hire 3D Animators
+                      Hire Business Card Designers
+                      Hire Tattoo Designers
+                      Hire Stationery Designers
+                      Hire Packaging Designers
+                      Hire Fashion Designers
+                      Hire Brochure Designers
+                      Hire T-Shirt Designers
+                      Hire Other Graphic Designers
+                    </ul>
+                    
+                    <li class="d-flex justify-content-between align-items-center text-start">Hire Logo Designers<i class="fa-solid fa-chevron-right "></i></li>
+                    </div>
+  
+                    <div class="graphics">
+                    <li class="d-flex justify-content-between align-items-center text-start">Hire 3D Graphic Designers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="graphicsdropdown bg-light text-dark">
+                    <li> Hire 3D Modelers</li>
+                    <li>Hire 3D Renderers</li>
+                    <li>Hire Other 3D Graphic Designers</li>
+                    </ul>
+                    </div>
+  
+                    <div class="wd">
+                    <li class="d-flex justify-content-between align-items-center text-start"> Hire Web Designers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="wddropdown bg-light text-dark">
+                      Hire Wordpress Web Designers
+                      Hire Squarespace Web Designers
+                      Hire Wix Web Designers
+                      Hire Shopify Web Designers
+                      Hire Magento Web Designers
+                      Hire Other Web Designers
+                    </ul>
+                    </div>
+  
+                    <div class="wdvp">
+                    <li class="d-flex justify-content-between align-items-center text-start"> Hire Web Developers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="wdvpdropdown bg-light text-dark">
+                      Hire PHP Web Developers
+                      Hire HTML5 Web Developers
+                      Hire CSS Web Developers
+                      Hire Javascript Web Developers
+                      Hire Ruby on Rails Web Developers
+                      Hire node.js Web Developers
+                      Hire Angular.js Web Developers
+                      Hire React.js Web Developers
+                      Hire Other Web Developers
+                    </ul>
+                    </div>
+  
+                    <div class="appdev">
+                    <li class="d-flex justify-content-between align-items-center text-start">  Hire Mobile App Developers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="appdevdropdown bg-light text-dark">
+                      Hire iPhone Mobile App Developers
+                      Hire Android Mobile App Developers
+                      Hire PhoneGap Mobile App Developers
+                      Hire Flutter Mobile App Developers
+                      Hire Xamarin Mobile App Developers
+                      Hire Other Mobile App Developers
+                    </ul>
+                    </div>
+  
+                    <div class="hw">
+                    <li class="d-flex justify-content-between align-items-center text-start"> Hire Writers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="hwdropdown bg-light text-dark">
+                      <li>Hire Article Writers</li>
+                     <li> Hire Copywriters</li>
+                     <li> Hire Ghostwriters</li>
+                      <li>Hire Other Writers</li>
+                    </ul>
+                    </div>
+  
+                    <div class="him">
+                    <li class="d-flex justify-content-between align-items-center text-start">  Hire Internet Marketing Specialists<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="himdropdown bg-light text-dark">
+                      <li>Hire Social Media Marketing Specialists</li>
+                      <li> Hire Other Internet Marketing Specialists</li>
+                    </ul>
+                    </div>
+  
+                    <li> Hire SEO Specialists</li>
+                    <li> Hire Data Entry Clerks</li>
+                    <li> Hire Virtual Assistants</li>
+  
+                    <div class="hsd">
+                    <li class="d-flex justify-content-between align-items-center text-start"> Hire Software Developers<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="hsddropdown bg-light text-dark">
+                      Hire Java Software Developers
+                      Hire C++ Software Developers
+                      Hire Python Software Developers
+                     Hire Database Software Developers
+                      Hire Linux Software Developers
+                      Hire Objective C Software Developers
+                     Hire Other Software Developers
+                    </ul>
+                    </div>
+  
+                    <div class="ht">
+                    <li class="d-flex justify-content-between align-items-center text-start"> Hire Translators<i class="fa-solid fa-chevron-right "></i></li>
+                    <ul class="htdropdown bg-light text-dark">
+                      Hire Spanish Translators
+                      Hire English Translators
+                      Hire Portuguese Translators
+                      Hire French Translators
+                      Hire German Translators
+                      Hire Other Translators
+                    </ul>
+                    </div>
+  
+  
+                    <li> Hire Financial Experts</li>
+                    <li> Hire Lawyers</li>
+                    <li> Hire Manufacturers</li>
+                    <li>Hire Logistics Experts</li>
+                  </ul> 
+                </div>
+  
+                <div class="location">
+                <li class="d-flex justify-content-between align-items-center text-start">By location <i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="locationdropdown bg-light text-dark">
+                  Hire Freelancers in the United States
+                  Hire Freelancers in the United Kingdom
+                  Hire Freelancers in Canada
+                  Hire Freelancers in India
+                  Hire Freelancers in Australia
+                  Hire Freelancers in Pakistan
+                  Hire Freelancers in Bangladesh
+                  Hire Freelancers in Indonesia
+                  Hire Freelancers in Brazil
+                  Hire Freelancers in China
+                  Hire Freelancers in Turkey
+                  Hire Freelancers in the Philippines
+                </ul>
+                <li style="list-style: none;">Skills categories</li>
+                </div>
+              </ul>
+            </div>
+  
+  
+            <!-- BTN 3 -->
+            <div class="btn3">
+              <button class="btn btn-dark" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\getideas.html">Get Ideas</a> 
+              </button>
+              <ul class="dropdown-menu3 bg-light text-dark text-start radius-3">
+                <li>Get Web Design Ideas</li>
+                <li>Get Mobile App Ideas</li>
+                <li> Get Graphic Design Ideas</li>
+                  <li>Get Logo Design Ideas</li>
+                 <li> Get 3D Modelling Ideas</li>
+                  <li>Get Illustration Ideas</li>
+                  <li> Get Branding Ideas</li>
+                 <li> Get Product Design Ideas</li>
+               <li> Get Package Design Ideas</li>
+                <li>  Get Wordpress Ideas</li>
+              </ul>
+            </div>
+  
+             <!-- BTN 4 -->
+             <div class="btn4">
+              <button class="btn btn-dark" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\about.html">About</a> 
+              </button>
+              <ul class="dropdown-menu4 bg-light text-dark text-start radius-3">
+                <li> Enterprise</li> 
+                <li> Membership</li> 
+                <li> Preferred Freelancer Program</li> 
+                <li> Get Verified</li> 
+              </ul>
+            </div>
+  
+             <!-- BTN 5 -->
+             <div class="btn5">
+              <button class="btn btn-dark" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\resouces page\resouces.html">Resources</a> 
+              </button>
+              <ul class="dropdown-menu5 bg-light text-dark text-start radius-3">
+               <li> What Is Adobe Photoshop</li> 
+               <li>What Is Android App Development</li> 
+               <li>What Is Article Writing</li> 
+                <li> What Is Data Entry</li> 
+                <li>  What Is Graphic Design</li> </li> 
+                <li> What is HTML</li> 
+                <li>What Is Internet Marketing</li> 
+                <li>    What Is iPhone App Development</li> 
+                <li>     What Is JavaScript</li> 
+                <li>    What Is Logo Design</li> 
+                <li>  What Is Mobile App Development</li> 
+                <li>  What Is PHP</li> 
+                <li>   What Is Python</li> 
+                <li>   What Is Software Architecture</li> 
+                <li>  What Is Web Design</li> 
+                  <li> What Is WordPress</li> 
+              </ul>
+            </div>
+    </div>
+
+    <section class="firstpage w-100">
+        <div class="text1">
+        <h1 style="font-size: 40px; font-weight: 700;">World's largest freelancing and <br> crowdsourcing marketplace.</h1>
+        <p style="font-size: 20px;">We connect over 72,439,631 employers and freelancers globally from over <br> 247 countries, regions, and territories.</p>
+        </div>
+    </section>
+
+    <section class="secondpage row w-100 p-5">
+        <div class="col-12 col-md-6 text-center">
+            <img src="overview-company-overview.webp" alt="">
+        </div>
+        <div class="col-12 col-md-6 align-items-center">
+            <h1>Company Overview</h1>
+            <p>Freelancer.com is the world's largest freelancing and crowdsourcing marketplace by number of users and projects. We connect over 72,440,270 employers and freelancers globally from over 247 countries, regions and territories. Through our marketplace, employers can hire freelancers to do work in areas such as software development, writing, data entry and design right through to engineering, the sciences, sales and marketing, accounting and legal services.
+                Freelancer Limited is trading on the Australian Securities Exchange under the ticker ASX:FLN</p>
+        </div>
+    </section>
+
+    <section class="thirdpage w-100 p-5">
+        <img class="col-12" src="Screenshot 2024-04-05 094307.png" alt="">
+    </section>
+
+    <section class="fourthpage w-100 p-5 d-flex justify-content-center">
+        <div class="">
+        <h1>Our Online Economy</h1>
+        <p>The video below illustrates the Freelancer online economy. The pink lines indicate where projects are being <br> posted by employers, and the blue lines indicate where the projects are being performed by freelancers. <br> Thicker lines indicate a higher dollar volume of work.
+             White dots indicate the location of Freelancer's users.</p>
+        </div>
+    </section>
+
+    <section class="fifthpage d-flex justify-content-center p-5 w-100">
+      <a href="https://www.youtube.com/watch?v=O9kf9xPO6m4"><img class="col-12" src="overview-map-placeholder.webp" alt=""></a>
+    </section>
+
+    <hr>
+
+    <section class="sixthpage w-100 d-flex justify-content-center p-5">
+      
+      <div class="sixdiv" style="width: 30%; text-align: center;">
+        <img width="90%" src="overview-press.jpg" alt="">
+        <h4>Press</h4>
+        <p>Find out our press releases under this section</p>
+        <button>View Press</button>
+      </div>
+      <div class="sixdiv" style="width: 30%; text-align: center;">
+        <img width="90%" src="overview-career.webp" alt="">
+        <h4>Career Opportunities</h4>
+        <p>See job opportunities at Freelancer</p>
+        <button>Join our team</button>
+      </div>
+      <div class="sixdiv" style="width: 30%; text-align: center;">
+        <img style="width: 90%; background-color: rgb(240,240,240); height: 250px; padding: 20px;" src="fl-logo.svg" alt="svg">
+        <h4>Media Kit</h4>
+        <p>Download our brand media kit in vector files</p>
+        <button>View our media kit</button>
+      </div>
+    </section>
+<hr>
+
+    <section class="seventhpage w-100 p-5 d-flex justify-content-center">
+      <div class="col-12 col-md-10">
+        <h5>Press Inquiries</h5>
+        <p>For any press inquiries, please email us at <a href="...">press@freelancer.com</a> </p>
+        <h5>Provenance</h5>
+        <p>Freelancer.com has acquired several outsourcing marketplaces including GetAFreelancer.com and EUFreelance.com (founded by <br> Magnus Tibell in 2004, Sweden), LimeExchange (a former business of
+           Lime Labs LLC, USA), Scriptlance.com (founded by Rene <br> Trescases in 2001, Canada, one of the early pioneers in freelancing), Freelancer.de Booking Center (Germany), Freelancer.co.uk <br> (United Kingdom), Webmaster-talk.com (USA), a forum for webmasters, Rent-A-Coder and vWorker (founded by Ian Ippolito, USA, <br> another early innovator in the freelance marketplace space).</p>
+           <img src="vworker-d197e4d5.png" alt="">
+      </div>
+
+      <div class="col-12 col-md-2 py-3">
+        <h5>Freelancer Limited</h5>
+        <h5>Registered Office</h5>
+        <p>Level 37 <br>
+          Grosvenor Place<br>
+          225 George Street<br>
+          Sydney, NSW 2000<br>
+          Australia<br>
+          ACN 141 959 042<br>
+          support@freelancer.com</p>
+      </div>
+    </section>
+
+    <section class="w-100" style="background-color: rgb(22,30,44);">
+      <div class="footer d-flex flex-wrap container w-100" style="height: 100vh; padding: 10px 0;color: white;">
+        <div class="col-12 col-md-2 ft">
+          <img class="w-50" src="freelancer-logo.svg" alt="">
+          <p><i class="fa-solid fa-globe p-1"></i>US (International) / English </p>
+          <p><i class="fa-solid fa-question p-1 bg-light text-dark text-center" style="border-radius: 100%; height: 18px; width: 18px; font-size: small;"></i>Help & Support</p>
+          <p><i class="fa-solid fa-person p-1"></i>Accessibility</p>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>Freelancer</h5>
+          <p>Categories</p>
+          <p> Projects</p>
+          <p> Contests</p>
+          <p>  Freelancers</p>
+          <p> Enterprise</p>
+          <p> Membership</p>
+          <p> Preferred Freelancer Program</p>
+          <p> Project Management</p>
+          <p> Local Jobs</p>
+          <p>  Photo Anywhere</p>
+          <p>  Showcase</p>
+          <p>  API for Developers</p>
+          <p>  Get Verified</p>
+          <p> Desktop App</p>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>About</h5>
+         <p> About us</p>
+         <p>  How it Works</p>
+          <p>  Security</p>
+            <p>   Investor</p>
+              <p>  Sitemap</p>
+          <p>   Stories</p>
+            <p>   News</p>
+              <p>   Team</p>
+                <p>   Awards</p>
+                  <p>   Press Releases</p>
+                    <p>  Careers</p>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>Terms</h5>
+         <p> Privacy Policy</p>
+         <p> Terms and Conditions</p>
+          <p> Copyright Policy</p>
+          <p> Code of Conduct</p>
+          <p> Fees and Charges</p>
+        </div>
+        <div class="col-12 col-md-2">
+         <h5> Partners</h5>
+          <p>Escrow.com</p>
+          <p>Loadshift</p>
+          <p> Warrior Forum</p>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>Apps</h5>
+          <p><img src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg" alt=""></p>
+          <img src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg" alt="">
+          <div class="my-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter px-2"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram px-2"></i>
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+        </div>
+      </div>
+
+      <hr class="text-light">
+
+      <div class="d-flex justify-content-between container text-light flex-wrap">
+        <p>72,218,930 <br> Registered Users</p>
+        <p>23,576,021 <br>Total Jobs Posted</p>
+        <p style="font-size: 10px;">Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759) <br>
+          Copyright © 2024 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+      </div>
+    </section>
+</body>
+</html>

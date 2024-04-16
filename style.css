@@ -1,0 +1,372 @@
+
+body{
+    background-color: black; 
+ }
+ .btn1{
+   position: relative;
+ }
+ .dropdown1{
+  z-index: 5;
+   /* display: none; */
+   position: absolute;
+   left: 40px;
+   cursor: pointer;
+   width: 200px;
+   padding: 10px;
+ }
+ .btn1:hover .dropdown1{
+  display: block;
+}
+ .PSkill{
+   position: relative;
+ }
+ .PSkill > p:hover{
+   color: blue;
+ }
+ .skilldrop{
+   position: absolute;
+   display: none;
+   left: 102%;
+   top: -80px;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+ }
+ .skilldrop > p:hover{
+   color: blue;
+ }
+ .PSkill:hover .skilldrop{
+   display: block;
+ }
+ .gd{
+   position: relative;
+ }
+ .gd > p:hover{
+   color: blue;
+ }
+ .gddropdown{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+ }
+ .gddropdown >p:hover{
+   color: blue;
+ }
+ .gd:hover .gddropdown{
+   display: block;
+ }
+ .wj{
+   position: relative;
+ }
+ .wj > p:hover{
+   color: blue;
+ }
+ .wjdropdown{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+ }
+ /* .wjdropdown > p:hover{
+   color: blue;
+ } */
+ .wj:hover .wjdropdown{
+   display: block;
+ }
+ .bl{
+   position: relative;
+ }
+ .bldropdown > p:hover{
+   color: blue;
+ }
+ .bldropdown{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+ }
+ .bl > p:hover{
+   color: blue;
+ }
+ .bl:hover .bldropdown{
+   display: block;
+ }
+  .fj{
+   position: relative; 
+ } 
+ .fj > p:hover{
+   color: blue;
+ }
+ .fjdropdown{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+ }
+ .fj:hover .fjdropdown{
+   display: block;
+ }
+
+ .fc{
+   /* position: relative; */
+ }
+ .fc > p:hover{
+   color: blue;
+ }
+ .fcdropdown{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+ }
+ .fc:hover .fcdropdown{
+   display: block;
+ }
+ .appdev{
+   position: relative;
+ }
+.appdevdropdown{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   
+   left: 100%;
+}
+.appdev > p:hover{
+   color: blue;
+ }
+ .appdev:hover .appdevdropdown{
+   display: block;
+ }
+ .btn2{
+   position: relative;
+   cursor: pointer;
+ }
+ .btn2drop{
+   /* display: none; */
+   position: absolute;
+   width: 150px;
+   padding: 10px;
+ }
+ .btn2:hover .btn2drop{
+   display: block;
+ }
+ .skills{
+   position: relative;
+ }
+ .skills > p:hover{
+   color: blue;
+ }
+ .skillsdrop{
+   display: none;
+   position: absolute;
+   width: 300px;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: -10px;
+   left: 102%;
+ 
+ }
+ .skillsdrop > p:hover{
+   color: blue;
+ }
+ .skills:hover .skillsdrop{
+   display: block;
+ }
+ .location{
+   position: relative;
+ }
+ .location > p:hover{
+   color: blue;
+ }
+ .locationdrop{
+   display: none;
+   position: absolute;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: -50px;
+   left: 100%;
+   width: 300px;
+ }
+ .locationdrop > p:hover{
+   color: blue;
+ }
+ .location:hover .locationdrop{
+   display: block;
+ }
+ .graphics{
+   position: relative;
+ }
+ .graphics > p:hover{
+   color: blue;
+ }
+ .graphicsdrop{
+   display: none;
+   position: absolute;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: -10px;
+   left: 100%;
+   width: 300px;
+ }
+ .graphicsdrop > p:hover{
+   color: blue;
+ }
+ .graphics:hover .graphicsdrop{
+   display: block;
+ }
+ .hiregd{
+   /* position: relative; */
+   cursor: pointer;
+ }
+ .hiregd > p:hover{
+   color: blue;
+ }
+ .hiregddrop{
+   display: none;
+   position: absolute;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+   width: 300px;
+ }
+ .hiregddrop > p:hover{
+   color: blue;
+ }
+ .hiregd:hover .hiregddrop{
+   display: block;
+ }
+ .hireweb > p:hover{
+   color: blue;
+ }
+ .hirewebdrop{
+   display: none;
+   width: 300px;
+   position: absolute;
+   padding: 10px;
+   border-left: 1px solid black;
+   top: -0px;
+   left: 100%;
+ }
+ .hireweb:hover .hirewebdrop{
+   display: block;
+ }
+ .hirewebdrop > p:hover{
+   color: blue;
+ }
+ .webdev{
+   /* position: relative; */
+   cursor: pointer;
+ }
+ .webdev > p:hover{
+   color: blue;
+ }
+ .webdevdrop{
+   display: none;
+   position: absolute;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+   width: 300px;
+ }
+ .webdevdrop > p:hover{
+   color: blue;
+ }
+ .webdev:hover .webdevdrop{
+   display: block;
+ }
+ .mobdev{
+   /* position: relative; */
+   cursor: pointer;
+ }
+ .mobdev > p:hover{
+   color: blue;
+ }
+ .mobdevdrop{
+   display: none;
+   position: absolute;
+   border-left: 1px solid black;
+   padding: 10px;
+   top: 0;
+   left: 100%;
+   width: 300px;
+ }
+ .mobdevdrop > p:hover{
+   color: blue;
+ }
+ .mobdev:hover .mobdevdrop{
+   display: block;
+ }
+ .btn3{
+    position: relative;
+    cursor: pointer;
+  }
+  .btn3drop{
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+  }
+  .btn3:focus-within .btn3drop{
+    display: block;
+  }
+  .btn3drop > p:hover{
+    color: blue;
+  }
+ .btn4{
+    position: relative;
+    cursor: pointer;
+  }
+  .btn4drop{
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+  }
+  .btn4:focus-within .btn4drop{
+    display: block;
+  }
+  .btn4drop > p:hover{
+    color: blue;
+  }
+ .btn5{
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .btn5drop{
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+
+  }
+  .btn5:focus-within .btn5drop{
+    display: block;
+  }
+  .btn5drop > p:hover{
+    color: blue;
+  }
+ .carousel{
+  position: relative;
+ }

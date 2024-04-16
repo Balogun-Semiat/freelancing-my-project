@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.freelancer.com/">
+    <link rel="stylesheet" href="loginpage.html">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body{
+     background-color: black; 
+  }
+  .btn1{
+    position: relative;
+  }
+  .dropdown1{
+    display: none;
+    position: absolute;
+    left: 50px;
+    /* top: 30px; */
+    cursor: pointer;
+    /* width: 150px; */
+    padding: 10px;
+  }
+  /* .dropdown1:hover{
+    color: blue !important;
+  } */
+  .btn1:hover .dropdown1{
+    display: block;
+  }
+  .PSkill{
+    /* position: relative; */
+  }
+  .PSkill > p:hover{
+    color: blue;
+  }
+  .skilldrop{
+    position: absolute;
+    display: none;
+    left: 102%;
+    top: 0;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  .skilldrop > p:hover{
+    color: blue;
+  }
+  .PSkill:hover .skilldrop{
+    display: block;
+  }
+  .gd{
+    /* position: relative; */
+  }
+  .gd > p:hover{
+    color: blue;
+  }
+  .gddropdown{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -11px;
+    left: 100%;
+  }
+  .gddropdown >p:hover{
+    color: blue;
+  }
+  .gd:hover .gddropdown{
+    display: block;
+  }
+  .wj{
+    /* position: relative; */
+  }
+  .wj > p:hover{
+    color: blue;
+  }
+  .wjdropdown{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -50px;
+    left: 100%;
+  }
+  /* .wjdropdown > p:hover{
+    color: blue;
+  } */
+  .wj:hover .wjdropdown{
+    display: block;
+  }
+  .bl{
+    /* position: relative; */
+  }
+  .bldropdown > p:hover{
+    color: blue;
+  }
+  .bldropdown{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -57px;
+    left: 102%;
+  }
+  .bl > p:hover{
+    color: blue;
+  }
+  .bl:hover .bldropdown{
+    display: block;
+  }
+   .fj{
+    /* position: relative;  */
+  } 
+  .fj > p:hover{
+    color: blue;
+  }
+  .fjdropdown{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -95px;
+    left: 104%;
+  }
+  .fj:hover .fjdropdown{
+    display: block;
+  }
+ 
+  .fc{
+    /* position: relative; */
+  }
+  .fc > p:hover{
+    color: blue;
+  }
+  .fcdropdown{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -138px;
+    left: 105%;
+  }
+  .fc:hover .fcdropdown{
+    display: block;
+  }
+  .appdev{
+    /* position: relative; */
+  }
+ .appdevdropdown{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -50px;
+    left: 100%;
+ }
+ .appdev > p:hover{
+    color: blue;
+  }
+  .appdev:hover .appdevdropdown{
+    display: block;
+  }
+  .btn2{
+    position: relative;
+    cursor: pointer;
+  }
+  .btn2drop{
+    display: none;
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+  }
+  .btn2:hover .btn2drop{
+    display: block;
+  }
+  .skills{
+    position: relative;
+  }
+  .skills > p:hover{
+    color: blue;
+  }
+  .skillsdrop{
+    display: none;
+    position: absolute;
+    width: 300px;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -10px;
+    left: 102%;
+  
+  }
+  .skillsdrop > p:hover{
+    color: blue;
+  }
+  .skills:hover .skillsdrop{
+    display: block;
+  }
+  .location{
+    position: relative;
+  }
+  .location > p:hover{
+    color: blue;
+  }
+  .locationdrop{
+    display: none;
+    position: absolute;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -50px;
+    left: 100%;
+    width: 300px;
+  }
+  .locationdrop > p:hover{
+    color: blue;
+  }
+  .location:hover .locationdrop{
+    display: block;
+  }
+  .graphics{
+    position: relative;
+  }
+  .graphics > p:hover{
+    color: blue;
+  }
+  .graphicsdrop{
+    display: none;
+    position: absolute;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: -10px;
+    left: 100%;
+    width: 300px;
+  }
+  .graphicsdrop > p:hover{
+    color: blue;
+  }
+  .graphics:hover .graphicsdrop{
+    display: block;
+  }
+  .hiregd{
+    /* position: relative; */
+    cursor: pointer;
+  }
+  .hiregd > p:hover{
+    color: blue;
+  }
+  .hiregddrop{
+    display: none;
+    position: absolute;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    width: 300px;
+  }
+  .hiregddrop > p:hover{
+    color: blue;
+  }
+  .hiregd:hover .hiregddrop{
+    display: block;
+  }
+  .hireweb > p:hover{
+    color: blue;
+  }
+  .hirewebdrop{
+    display: none;
+    width: 300px;
+    position: absolute;
+    padding: 10px;
+    border-left: 1px solid black;
+    top: -0px;
+    left: 100%;
+  }
+  .hireweb:hover .hirewebdrop{
+    display: block;
+  }
+  .hirewebdrop > p:hover{
+    color: blue;
+  }
+  .webdev{
+    /* position: relative; */
+    cursor: pointer;
+  }
+  .webdev > p:hover{
+    color: blue;
+  }
+  .webdevdrop{
+    display: none;
+    position: absolute;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    width: 300px;
+  }
+  .webdevdrop > p:hover{
+    color: blue;
+  }
+  .webdev:hover .webdevdrop{
+    display: block;
+  }
+  .mobdev{
+    /* position: relative; */
+    cursor: pointer;
+  }
+  .mobdev > p:hover{
+    color: blue;
+  }
+  .mobdevdrop{
+    display: none;
+    position: absolute;
+    border-left: 1px solid black;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    width: 300px;
+  }
+  .mobdevdrop > p:hover{
+    color: blue;
+  }
+  .mobdev:hover .mobdevdrop{
+    display: block;
+  }
+  
+</style>
+<body>
+   <nav class="navbar sticky-top bg-body-tertiary bg-light shadow">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand active">
+            <img style="width: 150px;" class=" img-fluid" src="freelancer-logo.svg" alt="">
+        </a>
+          <div class=" d-none d-md-none d-lg-block"> 
+          <a class="mx-2 text-dark text-decoration-none" href="...">How it works</a>
+          <a class="mx-2 text-dark text-decoration-none" href="...">Browse jobs</a>
+        </div>
+      </div>
+        <div class="d-flex" role="search">          
+          <button class="btn btn" type="submit">
+            <a class="text-dark text-decoration-none" href="file:///C:/Users/HP/Desktop/MY%20PROJECT/Freelancer/loginpage.html">Log In</a></button>
+          <button class="btn btn" type="submit">
+            <a class="text-dark text-decoration-none" href="...">Sign Up</a></button>
+          <button class="btn btn-danger" type="submit">
+            <a class="text-dark text-decoration-none" href="..">Post a Project</a></button>
+        </div>
+    </div>
+    </nav>
+
+    <div class="d-flex  bg-dark text-light px-5">
+      <div class="btn1">
+      <button class="mx-5 btn btn-dark">Find job</button>
+      <div class="dropdown1 bg-light text-dark w-75 p-3">
+        <div class="PSkill">
+        <p class="d-flex justify-content-between text-center align-items-center">By Skill <i class="fa-solid fa-chevron-right "></i></p> 
+            <div class="skilldrop bg-light text-dark" style="">
+              <div class="gd ">
+              <p class="d-flex justify-content-between text-center align-items-center">Find graphic design job <i class="fa-solid fa-chevron-right "></i></p>
+              <div class="gddropdown bg-light text-dark">
+                <p>Find logo design job</p>
+                <p>Find web design job</p>
+                <p>Find banner design job</p>
+                <p>Find 3D modelling jobs</p>
+                <p>Find photoshop job</p>
+                <p>Find illustration job</p>
+                <p>Find 3d animation job</p>
+                <p>Find 2d animation job</p>
+                <p>Find other graphic design job</p>
+              </div>
+            </div>
+            <div class="wj">
+              <p class="d-flex justify-content-between text-center align-items-center">Find website job <i class="fa-solid fa-chevron-right "></i></p>
+              <div class="wjdropdown bg-light text-dark">
+                <p>Find PHP job</p>
+                <p>Find Javascript job</p>
+                <p>Find .NET job</p>
+                <p>Find CSS jobs</p>
+                <p>Find amazon web service job</p>
+                <p>Find illustration job</p>
+                <p>Find 3d animation job</p>
+                <p>Find 2d animation job</p>
+                <p>Find other graphic design job</p>
+              </div>
+            </div>
+            <div class="appdev">
+              <p>Find mobile app development job</p>
+              <div class="appdevdropdown bg-light text-dark">
+                <p>Find IPhone app job</p>
+                <p>Find Android app job</p>
+                <p>Find Flutter job</p>
+                <p>Find Xamarine jobs</p>
+                <p>Find PhoneGap service job</p>
+                <p>Find other mobile app development jobs</p>
+                <p>Find 3d animation job</p>
+            </div>
+            </div>
+              <p>Find software development job</p>
+              <p>Find internet marketing job</p>
+              <p>Find data entry job</p>
+              <p>Find SEO job</p>
+              <p>Find writing job</p>
+              <p>Find legal job</p>
+              <p>Find finance job</p>
+              <p>Find manufacturing job</p>
+              <p>Find logistics job</p>
+            </div>
+      </div>
+
+      <div class="bl">
+        <p class="d-flex justify-content-between align-items-center">By Language <i class="fa-solid fa-chevron-right "></i></p>
+        <div class="bldropdown bg-light text-dark">
+          <p>Find freelance job in English</p>
+          <p>Find freelance job in Spanish</p>
+          <p>Find freelance job in Portugese</p>
+          <p>Find freelance job in French</p>
+          <p>Find freelance job in German</p>
+          <p>Find freelance job in other languages</p>
+        </div>
+        <p>Featured Jobs</p>
+        <p>Find Contests</p>
+    </div>
+    </div>
+    </div>
+
+    <div class="btn2">
+      <button class=" btn btn-dark">Hire Freelancer</button>
+      <div class="btn2drop bg-light text-dark">
+        <div class="skills">
+        <p>By Skills</p>
+        <div class="skillsdrop bg-light text-dark">
+          <div class="graphics ">
+          <p class="d-flex justify-content-between text-center align-items-center"> Hire Graphic Designers<i class="fa-solid fa-chevron-right "></i></p>
+          <div class="graphicsdrop bg-light text-dark">
+              <p>Hire Photoshop Designers</p>
+              <p>Hire Illustrators</p>
+             <p> Hire Motion Graphics Designers</p>
+              <p>Hire 2D Animators</p>
+              <p>Hire 3D Animators</p>
+              <p>Hire Business Card Designers</p>
+             <p> Hire Tattoo Designers</p>
+              <p>Hire Stationery Designers</p>
+              <p>Hire Packaging Designers</p>
+             <p> Hire Fashion Designers</p>
+             <p> Hire Brochure Designers</p>
+              <p>Hire T-Shirt Designers</p>
+              <p>Hire Other Graphic Designers</p>
+          </div>
+
+          <p>Hire Logo Designers</p>
+          </div>
+
+          <div class="hiregd">
+          <p class="d-flex justify-content-between text-center align-items-center">Hire 3D Graphic Designers<i class="fa-solid fa-chevron-right "></i></p>
+            <div class="hiregddrop bg-light text-dark">
+              <p>Hire 3D Modelers</p>
+              <p>Hire 3D Renderers</p>
+              <p>Hire Other 3D Graphic Designers</p>
+            </div>
+            </div>
+
+            <div class="hireweb">
+          <p class="d-flex justify-content-between text-center align-items-center">Hire Web Designers<i class="fa-solid fa-chevron-right "></i></p>
+          <div class="hirewebdrop bg-light text-dark">
+            <p>Hire Wordpress Web Designers</p>
+           <p> Hire Squarespace Web Designers</p>
+            <p>Hire Wix Web Designers</p>
+            <p>Hire Shopify Web Designers</p>
+            <p>Hire Magento Web Designers</p>
+            <p>Hire Other Web Designers</p>
+          </div>
+          </div>
+
+          <div class="webdev">
+          <p class="d-flex justify-content-between text-center align-items-center">Hire Web Developers<i class="fa-solid fa-chevron-right "></i></p>
+          <div class="webdevdrop bg-light text-dark">
+           <p> Hire PHP Web Developers</p>
+           <p>Hire HTML5 Web Developers</p>
+           <p> Hire CSS Web Developers</p>
+           <p>Hire Javascript Web Developers</p>
+           <p>Hire Ruby on Rails Web Developers</p>
+           <p>>Hire node.js Web Developers</p>
+           <p>Hire Angular.js Web Developers</p>
+           <p> Hire React.js Web Developers</p>
+           <p>Hire Other Web Developers</p>
+          </div>
+        </div>
+        
+        <div class="mobdev">
+          <p class="d-flex justify-content-between text-center align-items-center">Hire Mobile App Developers<i class="fa-solid fa-chevron-right "></i></p>
+          <div class="mobdevdrop bg-light text-dark">
+            <p>Hire iPhone Mobile App Developers</p>
+            <p>Hire Android Mobile App Developers</p>
+            <p>Hire PhoneGap Mobile App Developers</p>
+            <p>Hire Flutter Mobile App Developers</p>
+            <p>Hire Xamarin Mobile App Developers</p>
+            <p>Hire Other Mobile App Developers</p>
+          </div>
+        </div>
+          <p>Hire Writers</p>
+        <p>Hire Internet Marketing Specialists</p>
+        <p>Hire SEO Specialists</p>
+        <p>Hire Data Entry Clerks</p>
+        <p>Hire Virtual Assistance</p>
+        </div>
+      </div>
+      <div class="location">
+        <p>By Location</p>
+        <div class="locationdrop bg-light text-dark">
+          <p>Hire Freelancers in the United States</p>
+          <p>Hire Freelancers in the United Kingdom</p>
+          <p>Hire Freelancers in Canada</p>
+          <p>Hire Freelancers in India</p>
+         <p>Hire Freelancers in Australia</p>
+          <p>Hire Freelancers in Pakistan</p>
+          <p>Hire Freelancers in Bangladesh</p>
+         <p> Hire Freelancers in Indonesia</p>
+          <p>Hire Freelancers in Brazil</p>
+          <p>Hire Freelancers in China</p>
+         <p> Hire Freelancers in Turkey</p>
+        <p> Hire Freelancers in the Philippines</p>
+        </div>
+
+      <p>Skills categories</p>
+    </div>
+    </div>
+    </div>
+    <div class="btn3">
+      <button  class="btn btn-dark mx-5">Get ideas</button>
+      <div class="btn3drop bg-light text-dark">
+       <p> Get Web Design Ideas</p>
+       <p>Get Mobile App Ideas</p>
+        <p>Get Graphic Design Ideas</p>
+        <p>Get Logo Design Ideas</p>
+        <p>Get 3D Modelling Ideas</p>
+        <p>Get Illustration Ideas</p>
+        <p>Get Branding Ideas</p>
+        <p> Get Product Design Ideas</p>
+          <p>Get Package Design Ideas</p>
+            <p> Get Wordpress Ideas</p>
+      </div>
+    </div>
+    <div class="btn4">
+      <button  class="btn btn-dark">About</button>
+      <div class="btn4drop bg-light text-dark">
+        <p>Enterprise</p>
+        <p>Membership</p>
+        <p>Preferred Freelancer Program</p>
+        <p>Get Verified</p>
+      </div>
+    </div>
+
+    <div class="btn5">
+      <button class="btn btn-dark mx-5">Resources</button>
+      <div class="btn5drop bg-light text-dark">
+        <p></p>What Is Adobe Photoshop
+        <p></p>What Is Android App Development
+        <p></p>What Is Article Writing
+        <p> What Is Data Entry
+        <p>What Is Graphic Design
+        <p> What is HTML
+        <p> What Is Internet Marketing
+       <p>What Is iPhone App Development
+        <p>What Is JavaScript
+       <p>What Is Logo Design
+        <p>What Is Mobile App Development
+        <p>What Is PHP
+        <p>What Is Python
+        <p>What Is Software Architecture
+        <p>What Is Web Design
+        <p>What Is WordPress
+      </div>
+    </div>
+    </div>
+ 
+   
+<!-- <div style="">
+  <video autoplay muted>
+    <source src="house-v3.mp4" type="">
+  </video>
+  
+</div> -->
+
+
+<div id="carouselExampleFade" style="height: 90vh;" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+  <div class="carousel-inner" style="height: 90vh; z-index: -1;">
+
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/mobile-phone-1080.jpg" style="height: 90vh; width: 100vw;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>SLIDE 1</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="1000">
+      <img  src="https://www.f-cdn.com/assets/main/en/assets/home/hero/mobile-phone-850.jpg" style="height: 90vh;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>SLIDE 2</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="1000">
+      <img style="height: 100vh;" src="https://www.f-cdn.com/assets/main/en/assets/home/hero/mobile-phone-mobile.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>SLIDE 3</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/ai-contest-1080.jpg" class="d-block w-100" style="height: 90vh;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>SLIDE 4</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="15000">
+      <video autoplay muted>
+        <source src="https://www.f-cdn.com/assets/main/en/assets/home/video/house-v3.mp4" type="">
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <p>This architectural design cost $500 USD and took 15 days</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="20000">
+      <video src="https://www.f-cdn.com/assets/main/en/assets/home/video/nasa-v3.mp4" autoplay muted></video>
+      <div class="carousel-caption d-none d-md-block">
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/house-1080.jpg" style="height: 90vh;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/nasa-1080.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+  
+    <div class="carousel-item" data-bs-interval="20000">
+      <video src="https://www.f-cdn.com/assets/main/en/assets/home/video/ai-contest-hero.mp4" autoplay muted></video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+</div>
+
+
+
+
+   
+
+   
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- <script>
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script> -->
+<script src="stylesheet" href="bootstrap5/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

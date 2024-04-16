@@ -1,0 +1,817 @@
+body{
+    background-color: black;
+  }
+  .div2{
+   cursor: pointer;
+  padding-left: 70px;
+  height: 40px;
+  align-items: center;
+  align-content: center;
+  }
+  .btn1{
+    position: relative;
+    /* width: 110px; */
+    /* height: inherit; */
+  }
+  .btn1:hover .dropdown-menu{
+    display: block;
+  }
+  .dropdown-menu{
+    text-align: start;
+    cursor: pointer;
+    height: 390px;
+    padding: 5px;
+    width: 150px;
+  }
+  .dropdown-menu:hover{
+    color: blue;
+  }
+  .Skills{
+    /* position: relative; */
+  }
+  .Skillsdrop{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 142px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 390px;
+  }
+  .Skills:hover .Skillsdrop{
+    display: block;
+  }
+  .Skillsdrop:hover{
+    color: blue;
+  }
+  .Skillsdrop > li:hover{
+   color: blue;
+ }
+ .gddropdown{
+  list-style: none;
+  position: absolute;
+  width: 300px;
+  top: 0;
+  border-left: 1px solid black;
+  line-height: 30px;
+  left: 298px;
+  display: none;
+  height: 390px;
+ }
+ .gd:hover .gddropdown{
+  display: block;
+ }
+ .gddropdown >li:hover{
+   color: blue;
+ }
+ .wjdropdown{
+  list-style: none;
+  position: absolute;
+  width: 300px;
+  top: 0;
+  border-left: 1px solid black;
+  line-height: 30px;
+  left: 298px;
+  display: none;
+  height: 390px;
+ }
+ .wj:hover .wjdropdown{
+  display: block;
+ }
+ .wjdropdown >li:hover{
+   color: blue;
+ }
+ .mobileappdropdown{
+  list-style: none;
+  position: absolute;
+  width: 380px;
+  top: 0;
+  border-left: 1px solid black;
+  line-height: 30px;
+  left: 298px;
+  display: none;
+  height: 390px;
+ }
+ .mobileapp:hover .mobileappdropdown{
+  display: block;
+ }
+ .mobileappdropdown >li:hover{
+   color: blue;
+ }
+ .sddropdown{
+  list-style: none;
+  position: absolute;
+  width: 380px;
+  top: 0;
+  border-left: 1px solid black;
+  line-height: 30px;
+  left: 298px;
+  display: none;
+  height: 390px;
+ }
+ .sd:hover .sddropdown{
+  display: block;
+ }
+ .sddropdown >li:hover{
+   color: blue;
+ }
+ .intdropdown{
+  list-style: none;
+  position: absolute;
+  width: 380px;
+  top: 0;
+  border-left: 1px solid black;
+  line-height: 30px;
+  left: 298px;
+  display: none;
+  height: 390px;
+ }
+ .int:hover .intdropdown{
+  display: block;
+ }
+ .intdropdown >li:hover{
+   color: blue;
+ }
+ .writingdropdown{
+  list-style: none;
+  position: absolute;
+  width: 380px;
+  top: 0;
+  border-left: 1px solid black;
+  line-height: 30px;
+  left: 298px;
+  display: none;
+  height: 390px;
+ }
+ .writing:hover .writingdropdown{
+  display: block;
+ }
+ .writingdropdown >li:hover{
+   color: blue;
+ }
+ .bldropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 145px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 390px;
+  }
+  .bl:hover .bldropdown{
+  display: block;
+ }
+ .bldropdown >li:hover{
+   color: blue;
+ }
+ .btn2{
+  position: relative;
+  /* width: 120px;  */
+ }
+.dropdown-menu2{
+    text-align: start;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    height: 520px;
+    padding:5px;
+    width: 170px;
+}
+  .btn2:hover .dropdown-menu2{
+    display: block;
+  }
+.skill2drop{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 145px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding:0 10px;
+    height: 520px;
+}
+.skill2:hover .skill2drop{
+    display: block;
+  }
+.skill2drop > li:hover{
+   color: blue;
+}
+.gd2dropdown{
+  position: absolute;
+  list-style: none;
+  display: none;
+  left: 292px;
+  top: 0;
+  width: 300px;
+  text-align: start;
+  border-left: 1px solid black;
+  line-height: 30px;
+  padding: 5px;
+  height: 520px;
+}
+.gd2:hover .gd2dropdown{
+  display: block;
+}
+.graphicsdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.graphics:hover .graphicsdropdown{
+    display: block;
+  }
+.graphicsdropdown > li:hover{
+   color: blue;
+}
+.wddropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.wd:hover .wddropdown{
+    display: block;
+  }
+.wddropdown > li:hover{
+   color: blue;
+}
+.wdvpdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.wdvp:hover .wdvpdropdown{
+    display: block;
+  }
+.wdvpdropdown > li:hover{
+   color: blue;
+}
+.appdevdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.appdev:hover .appdevdropdown{
+    display: block;
+  }
+.appdevdropdown > li:hover{
+   color: blue;
+}
+.hwdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.hw:hover .hwdropdown{
+    display: block;
+  }
+.hwdropdown > li:hover{
+   color: blue;
+}
+.himdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.him:hover .himdropdown{
+    display: block;
+  }
+.himdropdown > li:hover{
+   color: blue;
+}
+.hsddropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.hsd:hover .hsddropdown{
+    display: block;
+  }
+.hsddropdown > li:hover{
+   color: blue;
+}
+.htdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 292px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    height: 520px;
+}
+.ht:hover .htdropdown{
+    display: block;
+  }
+.htdropdown > li:hover{
+   color: blue;
+}
+.locationdropdown{
+    position: absolute;
+    list-style: none;
+    display: none;
+    left: 145px;
+    top: 0;
+    width: 300px;
+    text-align: start;
+    border-left: 1px solid black;
+    line-height: 30px;
+    padding:0 10px;
+    height: 520px;
+}
+.location:hover .locationdropdown{
+    display: block;
+  }
+.locationdropdown > li:hover{
+   color: blue;
+}
+.btn3{
+  position: relative;
+  /* width: 110px;  */
+}
+.btn3 a{
+  text-decoration: none;
+  color: white;
+}
+.dropdown-menu3{
+  position: absolute;
+  width: 300px;
+  display: none;
+  padding: 10px;
+  list-style: none;
+  line-height: 30px;
+  cursor: pointer;
+}
+.btn3:hover .dropdown-menu3{
+  display: block;
+}
+.dropdown-menu3 > li:hover{
+  color: blue;
+}
+.btn4{
+  position: relative;
+  /* width: 110px;  */
+}
+.btn4 a{
+  text-decoration: none;
+  color: white;
+}
+.btn5{
+  position: relative;
+  /* width: 110px;  */
+}
+.btn5 a{
+  text-decoration: none;
+  color: white;
+}
+.dropdown-menu4{
+  position: absolute;
+  width: 300px;
+  display: none;
+  padding: 10px;
+  list-style: none;
+  line-height: 30px;
+  cursor: pointer;
+}
+.btn4:hover .dropdown-menu4{
+  display: block;
+}
+.dropdown-menu4 > li:hover{
+  color: blue;
+}
+.btn5{
+  position: relative;
+  /* width: 110px;  */
+}
+.dropdown-menu5{
+  position: absolute;
+  width: 300px;
+  display: none;
+  padding: 10px;
+  list-style: none;
+  line-height: 30px;
+  cursor: pointer;
+}
+.btn5:hover .dropdown-menu5{
+  display: block;
+}
+.dropdown-menu5 > li:hover{
+  color: blue;
+}
+ .divPOne{
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+} 
+/* .carousel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  z-index: -1;
+}  */
+.text{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: white;
+  width: 40%;
+ 
+}
+.text > p{
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 58px;
+}
+.text > li{
+  font-size: 20px;
+}
+.btndiv{
+  gap: 10px;
+}
+.bttn{
+  background-color:rgb(230,2,120);
+  font-weight: 700;
+}
+.logos{
+  gap: 75px;
+}
+.logos > img{
+  width: 60px;
+}
+.page2{
+  position: relative;
+  /* background-color: red; */
+}
+
+
+.leftbtn{
+  color: white;
+}
+.cards{
+  position: absolute;
+  top: 40%;
+  right: 17%;
+  width: 370px;
+}
+.text2{
+  position: absolute;
+  top: 28%;
+  left: 70px;
+  color: white;
+  width: 40%;
+}
+.ladyart{
+  position: relative;
+  /* display: inline-block; */
+  /* overflow: hidden; */
+}
+.ladyart:hover{
+  z-index: 1;
+}
+.label1{
+  position: absolute;
+  bottom: 0px;
+  left: 34px;
+  background-color: white;
+  padding: 5px;
+  width: 658px;
+  height: 60px;
+  /* transition: opacity 0.3s ease; */
+  transform: translateY(80%);
+  display: none;
+}
+.ladyart img{
+  transition: transform 0.3s ease;
+}
+.ladyart:hover img{
+  transform: scale(1.1);
+  z-index: 5;
+}
+.ladyart:hover .label1{
+  /* opacity: 1; */
+  display: block;
+}
+.contimg1{
+  position: relative;
+}
+.contimg1:hover{
+  z-index: 1;
+}
+.smimage1{
+  transition: transform 0.3s ease;
+}
+.label2{
+  position: absolute;
+  background-color: white;
+  width: 330px;
+  padding: 5px;
+  height: 50px;
+  transform: translateY(-2%);
+  transform: translateX(-4.5%);
+  left: ;
+  display: none;
+}
+.smimage1:hover{
+  transform: scale(1.1);
+}
+.contimg1:hover .label2{
+  display: block;
+}
+.contimg2{
+  position: relative;
+  /* z-index: 2; */
+}
+.contimg2:hover{
+  z-index: 1;
+}
+.contimg2 img{
+  transition: transform 0.3s;
+}
+.contimg2 img:hover{
+  transform: scale(1.1);
+}
+.contimg2:hover .label2{
+  display: block;
+}
+.contimg3{
+  position: relative;
+  /* z-index: 3; */
+}
+.contimg3:hover{
+  z-index: 1;
+}
+.contimg3 img{
+  transition: transform 0.3s;
+}
+.contimg3 img:hover{
+  transform: scale(1.1);
+}
+.contimg3:hover .label2{
+  display: block;
+}
+.contimg4{
+  position: relative;
+  /* z-index: 3; */
+}
+.contimg4:hover{
+  z-index: 1;
+}
+.contimg4 img{
+  transition: transform 0.3s;
+}
+.contimg4 img:hover{
+  transform: scale(1.1);
+}
+.contimg4:hover .label2{
+  display: block;
+}
+
+/* PAGE 4 */
+.page4{
+  position: relative;
+}
+.card2{
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 600px;
+}
+.text4{
+  position: absolute;
+  top: 15%;
+  left: 70px;
+  color: white;
+  width: 40%;
+}
+
+.catart{
+  position: relative;
+  /* display: inline-block; */
+  /* overflow: hidden; */
+}
+.catart:hover{
+  z-index: 1;
+}
+.labelcat{
+  position: absolute;
+  /* bottom: 0px; */
+  left: px;
+  background-color: white;
+  padding: 5px;
+  width: 660px;
+  height: 60px;
+  transition: opacity 0.3s ease;
+  transform: translateY(100%);
+  transform: translateX(-4.5%);
+  display: none;
+}
+.catart img{
+  transition: transform 0.3s ease;
+}
+.catart:hover img{
+  transform: scale(1.1);
+  z-index: 5;
+}
+.catart:hover .labelcat{
+  /* opacity: 1; */
+  display: block;
+}
+.contimg5{
+  position: relative;
+  /* z-index: 3; */
+}
+.contimg5:hover{
+  z-index: 1;
+}
+.contimg5 img{
+  transition: transform 0.3s;
+}
+.contimg5 img:hover{
+  transform: scale(1.1);
+}
+.contimg5:hover .labelsm{
+  display: block;
+}
+.labelsm{
+  position: absolute;
+  background-color: white;
+  width: 330px;
+  padding: 5px;
+  height: 50px;
+  transform: translateY(-2%);
+  transform: translateX(-4.5%);
+  display: none;
+}
+.contimg6{
+  position: relative;
+  /* z-index: 3; */
+}
+.contimg6:hover{
+  z-index: 1;
+}
+.contimg6 img{
+  transition: transform 0.3s;
+}
+.contimg6 img:hover{
+  transform: scale(1.1);
+}
+.contimg6:hover .labelsm{
+  display: block;
+}
+.contimg7{
+  position: relative;
+  /* z-index: 3; */
+}
+.contimg7:hover{
+  z-index: 1;
+}
+.contimg7 img{
+  transition: transform 0.3s;
+}
+.contimg7 img:hover{
+  transform: scale(1.1);
+}
+.contimg7:hover .labelsm{
+  display: block;
+}
+.contimg8{
+  position: relative;
+  /* z-index: 3; */
+}
+.contimg8:hover{
+  z-index: 1;
+}
+.contimg8 img{
+  transition: transform 0.3s;
+}
+.contimg8 img:hover{
+  transform: scale(1.1);
+}
+.contimg8:hover .labelsm{
+  display: block;
+}
+.logo2{
+  gap: 25px;
+}
+/* .logo2 img{
+  font-size: 70px;
+} */
+
+.ttt p:hover{
+  color: blue;
+  cursor: pointer;
+}
+.page7{
+  position: relative;
+  /* background-image: url(https://www.f-cdn.com/assets/main/en/assets/home/ai-business/ai-business-bg-ld.jpg); */
+  width: 100%;
+  height: 120vh;
+  background-size: cover;
+}
+.card3{
+  position: absolute;
+  top: 25%;
+  right: 17%;
+  width: 370px;
+}
+
+.pg7text{
+  position: absolute;
+  /* padding-left: 70px; */
+  color: white;
+  width: 50%;
+  top: 10%;
+  left: 70px;
+  
+}
+.page9{
+  position: relative;
+  background-image: url(https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/enterprise-upsell-v5-desktop-test.jpg);
+  background-size: cover;
+}
+.pg9text{
+  /* position: absolute; */
+  padding-left: 70px;
+  color: white;
+  width: 40%;
+  
+}
+.footer div{
+  line-height: 10px;
+}
+.footer > div p:hover{
+  text-decoration: underline;
+}
