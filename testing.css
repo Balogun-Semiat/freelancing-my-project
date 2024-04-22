@@ -2,11 +2,11 @@ body{
     background-color: black;
   }
   .div2{
-   cursor: pointer;
-  padding-left: 70px;
-  height: 40px;
-  align-items: center;
-  align-content: center;
+    cursor: pointer;
+    padding-left: 70px;
+    height: 40px;
+    align-items: center;
+    align-content: center;
   }
   .btn1{
     position: relative;

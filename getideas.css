@@ -1,12 +1,13 @@
 body{
     background-color: white !important;
+    width: 100%;
 }
-.container{
-    margin: 0 !important;
-  }
-
+.div2{
+    width: 100% !important;
+}
 .sec1{
     background-color: rgb(221,183,199);
+    width: 100%;
     padding: 70px;
 }
 .circle{
@@ -26,8 +27,7 @@ body{
     height: 50px;
     overflow-x: scroll;
     background-color: white; 
-    gap: 20px;
-    
+    gap: 20px;  
 }
 
 .sec2 div p{
