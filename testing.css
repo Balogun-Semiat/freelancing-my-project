@@ -811,6 +811,7 @@ body{
 }
 .footer div{
   line-height: 10px;
+  font-size: small;
 }
 .footer > div p:hover{
   text-decoration: underline;
