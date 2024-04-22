@@ -3,688 +3,873 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://www.freelancer.com/">
-    <link rel="stylesheet" href="loginpage.html">
-    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+    <title>Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="testing.css">
+    <link rel="stylesheet" href="mediaquery.css" media="(max-width:800px)">
 </head>
 <style>
-  body{
-     background-color: black; 
+  @media screen and (max-width:800px) {
+   /*  */
   }
-  .btn1{
-    position: relative;
-  }
-  .dropdown1{
-    display: none;
-    position: absolute;
-    left: 50px;
-    /* top: 30px; */
-    cursor: pointer;
-    /* width: 150px; */
-    padding: 10px;
-  }
-  /* .dropdown1:hover{
-    color: blue !important;
-  } */
-  .btn1:hover .dropdown1{
-    display: block;
-  }
-  .PSkill{
-    /* position: relative; */
-  }
-  .PSkill > p:hover{
-    color: blue;
-  }
-  .skilldrop{
-    position: absolute;
-    display: none;
-    left: 102%;
-    top: 0;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  .skilldrop > p:hover{
-    color: blue;
-  }
-  .PSkill:hover .skilldrop{
-    display: block;
-  }
-  .gd{
-    /* position: relative; */
-  }
-  .gd > p:hover{
-    color: blue;
-  }
-  .gddropdown{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -11px;
-    left: 100%;
-  }
-  .gddropdown >p:hover{
-    color: blue;
-  }
-  .gd:hover .gddropdown{
-    display: block;
-  }
-  .wj{
-    /* position: relative; */
-  }
-  .wj > p:hover{
-    color: blue;
-  }
-  .wjdropdown{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -50px;
-    left: 100%;
-  }
-  /* .wjdropdown > p:hover{
-    color: blue;
-  } */
-  .wj:hover .wjdropdown{
-    display: block;
-  }
-  .bl{
-    /* position: relative; */
-  }
-  .bldropdown > p:hover{
-    color: blue;
-  }
-  .bldropdown{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -57px;
-    left: 102%;
-  }
-  .bl > p:hover{
-    color: blue;
-  }
-  .bl:hover .bldropdown{
-    display: block;
-  }
-   .fj{
-    /* position: relative;  */
-  } 
-  .fj > p:hover{
-    color: blue;
-  }
-  .fjdropdown{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -95px;
-    left: 104%;
-  }
-  .fj:hover .fjdropdown{
-    display: block;
-  }
- 
-  .fc{
-    /* position: relative; */
-  }
-  .fc > p:hover{
-    color: blue;
-  }
-  .fcdropdown{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -138px;
-    left: 105%;
-  }
-  .fc:hover .fcdropdown{
-    display: block;
-  }
-  .appdev{
-    /* position: relative; */
-  }
- .appdevdropdown{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -50px;
-    left: 100%;
- }
- .appdev > p:hover{
-    color: blue;
-  }
-  .appdev:hover .appdevdropdown{
-    display: block;
-  }
-  .btn2{
-    position: relative;
-    cursor: pointer;
-  }
-  .btn2drop{
-    display: none;
-    position: absolute;
-    width: 150px;
-    padding: 10px;
-  }
-  .btn2:hover .btn2drop{
-    display: block;
-  }
-  .skills{
-    position: relative;
-  }
-  .skills > p:hover{
-    color: blue;
-  }
-  .skillsdrop{
-    display: none;
-    position: absolute;
-    width: 300px;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -10px;
-    left: 102%;
-  
-  }
-  .skillsdrop > p:hover{
-    color: blue;
-  }
-  .skills:hover .skillsdrop{
-    display: block;
-  }
-  .location{
-    position: relative;
-  }
-  .location > p:hover{
-    color: blue;
-  }
-  .locationdrop{
-    display: none;
-    position: absolute;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -50px;
-    left: 100%;
-    width: 300px;
-  }
-  .locationdrop > p:hover{
-    color: blue;
-  }
-  .location:hover .locationdrop{
-    display: block;
-  }
-  .graphics{
-    position: relative;
-  }
-  .graphics > p:hover{
-    color: blue;
-  }
-  .graphicsdrop{
-    display: none;
-    position: absolute;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: -10px;
-    left: 100%;
-    width: 300px;
-  }
-  .graphicsdrop > p:hover{
-    color: blue;
-  }
-  .graphics:hover .graphicsdrop{
-    display: block;
-  }
-  .hiregd{
-    /* position: relative; */
-    cursor: pointer;
-  }
-  .hiregd > p:hover{
-    color: blue;
-  }
-  .hiregddrop{
-    display: none;
-    position: absolute;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: 0;
-    left: 100%;
-    width: 300px;
-  }
-  .hiregddrop > p:hover{
-    color: blue;
-  }
-  .hiregd:hover .hiregddrop{
-    display: block;
-  }
-  .hireweb > p:hover{
-    color: blue;
-  }
-  .hirewebdrop{
-    display: none;
-    width: 300px;
-    position: absolute;
-    padding: 10px;
-    border-left: 1px solid black;
-    top: -0px;
-    left: 100%;
-  }
-  .hireweb:hover .hirewebdrop{
-    display: block;
-  }
-  .hirewebdrop > p:hover{
-    color: blue;
-  }
-  .webdev{
-    /* position: relative; */
-    cursor: pointer;
-  }
-  .webdev > p:hover{
-    color: blue;
-  }
-  .webdevdrop{
-    display: none;
-    position: absolute;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: 0;
-    left: 100%;
-    width: 300px;
-  }
-  .webdevdrop > p:hover{
-    color: blue;
-  }
-  .webdev:hover .webdevdrop{
-    display: block;
-  }
-  .mobdev{
-    /* position: relative; */
-    cursor: pointer;
-  }
-  .mobdev > p:hover{
-    color: blue;
-  }
-  .mobdevdrop{
-    display: none;
-    position: absolute;
-    border-left: 1px solid black;
-    padding: 10px;
-    top: 0;
-    left: 100%;
-    width: 300px;
-  }
-  .mobdevdrop > p:hover{
-    color: blue;
-  }
-  .mobdev:hover .mobdevdrop{
-    display: block;
-  }
-  
 </style>
 <body>
-   <nav class="navbar sticky-top bg-body-tertiary bg-light shadow">
-    <div class="container">
-      <div class="d-flex align-items-center">
-        <a class="navbar-brand active">
-            <img style="width: 150px;" class=" img-fluid" src="freelancer-logo.svg" alt="">
-        </a>
-          <div class=" d-none d-md-none d-lg-block"> 
-          <a class="mx-2 text-dark text-decoration-none" href="...">How it works</a>
-          <a class="mx-2 text-dark text-decoration-none" href="...">Browse jobs</a>
+    <nav class="navbar navbar-expand sticky-top bg-body-tertiary bg-light shadow w-100 d-block ">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand active" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\testing.html">
+                <img style="width: 150px;" class=" img-fluid free-logo" src="freelancer-logo.svg" alt="">
+            </a>
+              <div class="d-none d-md-none d-lg-block"> 
+              <a class="mx-2 text-dark text-decoration-none" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\howitworks.html">How it works</a>
+              <a class="mx-2 text-dark text-decoration-none" href="...">Browse jobs</a>
+            </div>
+          </div>
+            <div class="d-flex navbtn" role="search">          
+              <!-- <button class="btn btn" type="submit" data-bs-toggle="modal" data-target="#myModal#">
+                <a class="text-dark text-decoration-none" href="file:///C:/Users/HP/Desktop/MY%20PROJECT/Freelancer/loginpage.html">Log In</a></button> -->
+                <button class="btn btn" type="submit">
+                  <a class="text-dark text-decoration-none" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\loginpage.html">Log In</a></button>
+              <button class="btn btn" type="submit">
+                <a class="text-dark text-decoration-none" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\signup.html">Sign Up</a></button>
+              <button class="btn btn d-none d-md-none d-lg-block" style="background-color: rgb(230,2,120);" type="submit">
+                <a class="text-dark text-decoration-none " href="..">Post a Project</a></button>
+            </div>
         </div>
-      </div>
-        <div class="d-flex" role="search">          
-          <button class="btn btn" type="submit">
-            <a class="text-dark text-decoration-none" href="file:///C:/Users/HP/Desktop/MY%20PROJECT/Freelancer/loginpage.html">Log In</a></button>
-          <button class="btn btn" type="submit">
-            <a class="text-dark text-decoration-none" href="...">Sign Up</a></button>
-          <button class="btn btn-danger" type="submit">
-            <a class="text-dark text-decoration-none" href="..">Post a Project</a></button>
-        </div>
-    </div>
-    </nav>
+        </nav>
 
-    <div class="d-flex  bg-dark text-light px-5">
-      <div class="btn1">
-      <button class="mx-5 btn btn-dark">Find job</button>
-      <div class="dropdown1 bg-light text-dark w-75 p-3">
-        <div class="PSkill">
-        <p class="d-flex justify-content-between text-center align-items-center">By Skill <i class="fa-solid fa-chevron-right "></i></p> 
-            <div class="skilldrop bg-light text-dark" style="">
-              <div class="gd ">
-              <p class="d-flex justify-content-between text-center align-items-center">Find graphic design job <i class="fa-solid fa-chevron-right "></i></p>
-              <div class="gddropdown bg-light text-dark">
-                <p>Find logo design job</p>
-                <p>Find web design job</p>
-                <p>Find banner design job</p>
-                <p>Find 3D modelling jobs</p>
-                <p>Find photoshop job</p>
-                <p>Find illustration job</p>
-                <p>Find 3d animation job</p>
-                <p>Find 2d animation job</p>
-                <p>Find other graphic design job</p>
+        <div class="d-flex col-12   bg-dark text-light px-5 gap-5 div2 w-100 d-block" >
+          <div class="btn1">
+            <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Find Jobs
+            </button>
+            <ul class="dropdown-menu bg-light text-dark px-3 text-start">
+              <div class="Skills">
+              <li class="d-flex justify-content-between align-items-center text-start">By Skill<i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="Skillsdrop bg-light text-dark radius-3 ">
+                  <div class="gd">
+                <li class="d-flex justify-content-between align-items-center text-start">Find Graphic Design Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="gddropdown bg-light text-dark">
+                    <li>Find logo design job</li>
+                    <li>Find web design job</li>
+                    <li>Find banner design job</li>
+                    <li>Find 3D modelling jobs</li>
+                    <li>Find photoshop job</li>
+                    <li>Find illustration job</li>
+                    <li>Find 3d animation job</li>
+                    <li>Find 2d animation job</li>
+                    <li>Find other graphic design job</li>
+                  </ul>
+                </div>
+
+                <div class="wj">
+                <li class="d-flex justify-content-between align-items-center text-start">Find Website Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                      <ul class="wjdropdown bg-light text-dark">
+                      <li>  Find PHP Jobs</li>
+                      <li>Find Javascript Jobs</li>
+                      <li> Find .NET Jobs</li>
+                      <li> Find CSS Jobs</li>
+                      <li> Find Amazon Web Services Jobs</li>
+                      <li>Find HTML5 Jobs</li>
+                      <li> Find Wordpress Jobs</li>
+                      <li>  Find Wix Jobs</li>
+                      <li>  Find Squarespace Jobs</li>
+                      <li>Find Shopify Jobs</li>
+                      <li>Find Magento Jobs</li>
+                      <li> Find Database Development Jobs</li>
+                      <li> Find Other Website Jobs</li>
+                      </ul>
+                  </div>
+
+                  <div class="mobileapp">
+                <li class="d-flex justify-content-between align-items-center text-start">Find Mobile App Development Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="mobileappdropdown bg-light text-dark">
+                   <li> Find iPhone App Jobs</li>
+                   <li> Find Android App Jobs</li>
+                   <li>Find Flutter Jobs</li>
+                  <li> Find Xamarin Jobs</li>
+                  <li>Find PhoneGap Jobs</li>
+                  <li> Find Other Mobile App Development Jobs</li>
+                  </ul>
+                </div>
+
+                <div class="sd">
+                <li class="d-flex justify-content-between align-items-center text-start">Find Software Development Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="sddropdown bg-light text-dark">
+                  <li>Find Linux Jobs</li>
+                  <li>Find C++ Software Development Jobs</li>
+                  <li> Find C# Software Development Jobs</li>
+                  <li>Find Objective C Software Development Jobs</li>
+                  <li> Find Ruby On Rails Software Development Jobs</li>
+                  <li> Find Python Software Development Jobs</li>
+                  <li> Find Java Software Development Jobs</li>
+                  <li>Find Other Software Development Jobs</li>
+                </ul>
+              </div>
+
+              <div class="int">
+                <li class="d-flex justify-content-between align-items-center text-start">Find Internet Marketing Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="intdropdown bg-light text-dark">
+                  <li> Find Social Media Marketing Jobs</li>
+                  <li>Find Other Internet Marketing Jobs</li>
+                </ul>
+              </div>
+
+                <li>Find Data Entry Jobs</li>
+                <li>Find SEO Jobs</li>
+
+                <div class="writing">
+                <li class="d-flex justify-content-between align-items-center text-start">Find Writing Jobs<i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="writingdropdown bg-light text-dark">
+                  Find Copywriting Jobs
+                  Find Ghostwriting Jobs
+                  Find Article Writing Jobs
+                  Find Other Writing Jobs
+                </ul>
+              </div>
+
+                <li>Find Legal Jobs</li>
+                <li>Find Finance Jobs</li>
+                <li>Find Manufacturing Jobs</li>
+                <li>Find Logistics Jobs</li>
+                </ul>
+              </div>
+
+              <!-- BY LANGUAGE -->
+              <div class="bl">
+              <li class="d-flex justify-content-between align-items-center text-start">By Language<i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="bldropdown bg-light text-dark">
+                  <li> Find Freelance Jobs In English</li>
+                  <li>Find Freelance Jobs In Spanish</li>
+                  <li>Find Freelance Jobs In Portugese</li>
+                  <li>Find Freelance Jobs In French</li>
+                  <li>Find Freelance Jobs In German</li>
+                  <li>Find Freelancer Jobs in Other Languages</li>
+                </ul>
+              <li>Featured Jobs</li>
+              <li>Find Contest</li>
+            </div>
+            </ul>
+          </div>
+
+          <!-- BTN 2 -->
+          <div class="btn2">
+            <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Hire Freelancers
+            </button>
+            <ul class="dropdown-menu2 bg-light text-dark text-start radius-3">
+              <div class="skill2">
+              <li class="d-flex justify-content-between align-items-center text-start">By Skill<i class="fa-solid fa-chevron-right "></i></li>
+                <ul class="skill2drop bg-light text-dark">
+                  <div class="gd2">
+                  <li class="d-flex justify-content-between align-items-center text-start"> Hire Graphic Designers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="gd2dropdown bg-light text-dark">
+                    Hire Photoshop Designers
+                    Hire Illustrators
+                    Hire Motion Graphics Designers
+                    Hire 2D Animators
+                    Hire 3D Animators
+                    Hire Business Card Designers
+                    Hire Tattoo Designers
+                    Hire Stationery Designers
+                    Hire Packaging Designers
+                    Hire Fashion Designers
+                    Hire Brochure Designers
+                    Hire T-Shirt Designers
+                    Hire Other Graphic Designers
+                  </ul>
+                  
+                  <li class="d-flex justify-content-between align-items-center text-start">Hire Logo Designers<i class="fa-solid fa-chevron-right "></i></li>
+                  </div>
+
+                  <div class="graphics">
+                  <li class="d-flex justify-content-between align-items-center text-start">Hire 3D Graphic Designers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="graphicsdropdown bg-light text-dark">
+                  <li> Hire 3D Modelers</li>
+                  <li>Hire 3D Renderers</li>
+                  <li>Hire Other 3D Graphic Designers</li>
+                  </ul>
+                  </div>
+
+                  <div class="wd">
+                  <li class="d-flex justify-content-between align-items-center text-start"> Hire Web Designers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="wddropdown bg-light text-dark">
+                    Hire Wordpress Web Designers
+                    Hire Squarespace Web Designers
+                    Hire Wix Web Designers
+                    Hire Shopify Web Designers
+                    Hire Magento Web Designers
+                    Hire Other Web Designers
+                  </ul>
+                  </div>
+
+                  <div class="wdvp">
+                  <li class="d-flex justify-content-between align-items-center text-start"> Hire Web Developers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="wdvpdropdown bg-light text-dark">
+                    Hire PHP Web Developers
+                    Hire HTML5 Web Developers
+                    Hire CSS Web Developers
+                    Hire Javascript Web Developers
+                    Hire Ruby on Rails Web Developers
+                    Hire node.js Web Developers
+                    Hire Angular.js Web Developers
+                    Hire React.js Web Developers
+                    Hire Other Web Developers
+                  </ul>
+                  </div>
+
+                  <div class="appdev">
+                  <li class="d-flex justify-content-between align-items-center text-start">  Hire Mobile App Developers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="appdevdropdown bg-light text-dark">
+                    Hire iPhone Mobile App Developers
+                    Hire Android Mobile App Developers
+                    Hire PhoneGap Mobile App Developers
+                    Hire Flutter Mobile App Developers
+                    Hire Xamarin Mobile App Developers
+                    Hire Other Mobile App Developers
+                  </ul>
+                  </div>
+
+                  <div class="hw">
+                  <li class="d-flex justify-content-between align-items-center text-start"> Hire Writers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="hwdropdown bg-light text-dark">
+                    <li>Hire Article Writers</li>
+                   <li> Hire Copywriters</li>
+                   <li> Hire Ghostwriters</li>
+                    <li>Hire Other Writers</li>
+                  </ul>
+                  </div>
+
+                  <div class="him">
+                  <li class="d-flex justify-content-between align-items-center text-start">  Hire Internet Marketing Specialists<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="himdropdown bg-light text-dark">
+                    <li>Hire Social Media Marketing Specialists</li>
+                    <li> Hire Other Internet Marketing Specialists</li>
+                  </ul>
+                  </div>
+
+                  <li> Hire SEO Specialists</li>
+                  <li> Hire Data Entry Clerks</li>
+                  <li> Hire Virtual Assistants</li>
+
+                  <div class="hsd">
+                  <li class="d-flex justify-content-between align-items-center text-start"> Hire Software Developers<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="hsddropdown bg-light text-dark">
+                    Hire Java Software Developers
+                    Hire C++ Software Developers
+                    Hire Python Software Developers
+                   Hire Database Software Developers
+                    Hire Linux Software Developers
+                    Hire Objective C Software Developers
+                   Hire Other Software Developers
+                  </ul>
+                  </div>
+
+                  <div class="ht">
+                  <li class="d-flex justify-content-between align-items-center text-start"> Hire Translators<i class="fa-solid fa-chevron-right "></i></li>
+                  <ul class="htdropdown bg-light text-dark">
+                    Hire Spanish Translators
+                    Hire English Translators
+                    Hire Portuguese Translators
+                    Hire French Translators
+                    Hire German Translators
+                    Hire Other Translators
+                  </ul>
+                  </div>
+
+
+                  <li> Hire Financial Experts</li>
+                  <li> Hire Lawyers</li>
+                  <li> Hire Manufacturers</li>
+                  <li>Hire Logistics Experts</li>
+                </ul> 
+              </div>
+
+              <div class="location">
+              <li class="d-flex justify-content-between align-items-center text-start">By location <i class="fa-solid fa-chevron-right "></i></li>
+              <ul class="locationdropdown bg-light text-dark">
+                Hire Freelancers in the United States
+                Hire Freelancers in the United Kingdom
+                Hire Freelancers in Canada
+                Hire Freelancers in India
+                Hire Freelancers in Australia
+                Hire Freelancers in Pakistan
+                Hire Freelancers in Bangladesh
+                Hire Freelancers in Indonesia
+                Hire Freelancers in Brazil
+                Hire Freelancers in China
+                Hire Freelancers in Turkey
+                Hire Freelancers in the Philippines
+              </ul>
+              <li style="list-style: none;">Skills categories</li>
+              </div>
+            </ul>
+          </div>
+
+
+          <!-- BTN 3 -->
+          <div class="btn3">
+            <button class="btn btn-dark" type="submit">
+              <a class="" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\getideas.html">Get Ideas</a></button>
+            <ul class="dropdown-menu3 bg-light text-dark text-start radius-3">
+              <li>Get Web Design Ideas</li>
+              <li>Get Mobile App Ideas</li>
+              <li> Get Graphic Design Ideas</li>
+                <li>Get Logo Design Ideas</li>
+               <li> Get 3D Modelling Ideas</li>
+                <li>Get Illustration Ideas</li>
+                <li> Get Branding Ideas</li>
+               <li> Get Product Design Ideas</li>
+             <li> Get Package Design Ideas</li>
+              <li>  Get Wordpress Ideas</li>
+            </ul>
+          </div>
+
+           <!-- BTN 4 -->
+           <div class="btn4">
+            <button class="btn btn-dark" type="submit">
+              <a class="" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\about.html">About</a></button>
+            <ul class="dropdown-menu4 bg-light text-dark text-start radius-3">
+              <li> Enterprise</li> 
+              <li> Membership</li> 
+              <li> Preferred Freelancer Program</li> 
+              <li> Get Verified</li> 
+            </ul>
+          </div>
+
+           <!-- BTN 5 -->
+           <div class="btn5">
+            <button class="btn btn-dark" type="submit">
+              <a class="" href="C:\Users\HP\Desktop\MY PROJECT\Freelancer\resouces page\resouces.html">Resources</a></button>
+            <ul class="dropdown-menu5 bg-light text-dark text-start radius-3">
+             <li> What Is Adobe Photoshop</li> 
+             <li>What Is Android App Development</li> 
+             <li>What Is Article Writing</li> 
+              <li> What Is Data Entry</li> 
+              <li>  What Is Graphic Design</li> </li> 
+              <li> What is HTML</li> 
+              <li>What Is Internet Marketing</li> 
+              <li>    What Is iPhone App Development</li> 
+              <li>     What Is JavaScript</li> 
+              <li>    What Is Logo Design</li> 
+              <li>  What Is Mobile App Development</li> 
+              <li>  What Is PHP</li> 
+              <li>   What Is Python</li> 
+              <li>   What Is Software Architecture</li> 
+              <li>  What Is Web Design</li> 
+                <li> What Is WordPress</li> 
+            </ul>
+          </div>
+      </div>
+
+        <div class="divPOne w-100">
+          <video src="https://www.f-cdn.com/assets/main/en/assets/home/video/nasa-v3.mp4" autoplay muted loop style="height: 100vh; width: 100%;" class="w-100"></video>
+         
+            <div class="text col-md-4">
+            <p class="">Hire the best freelancers for any job, online.</p>
+            <li>World's largest freelance marketplace</li>
+            <li>Any job you can possibly think of</li>
+            <li>Save up to 90% & get quotes for free</li>
+            <li>Pay only when you're 100% happy</li>
+            <div class="my-3 col-md-6 w-100 btndiv d-flex">
+            <button class="bttn btn btn text-light fs-5 p-2 ">Hire a Freelancer</button>
+            <button class="earnbtn btn btn- text-light border-light fs-5 p-2">Earn Money Freelancing</button>
+          </div> 
+        </div>
+        </div>
+
+       
+          <div class="page2 row w-100 my-5 flex-wrap" style="height: 130vh;">
+            <div class="d-flex divlogo align-items-center text-center  p-5 flex-wrap w-100 gap-4">
+              <div class="text-light">As used by </div>
+              <div class="d-flex justify-content-between logos" >
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/amazon_logo2-darkmode.svg" alt="">
+              <img style="font-size: ;" src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo3.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo.svg" alt="">
+            </div>
+            </div>
+          
+            <div>
+              <img class="d-none d-md-block" src="make-it-real-bg-ld.webp" width="100%"  alt="">
+            </div>
+
+            <div class="text2">
+              <h1 style="color: rgb(230,2,120); font-size: 60px;font-weight: 700;">Make it real </h1>
+              <h1 style="font-size: 60px;font-weight: 700;"> with Freelancer</h1>
+              <div class="d-flex gap-4"> 
+                <span>
+                  <h3>The best talent</h3>
+                  <p >Discover reliable professionals by exploring their portfolios 
+                    and immersing yourself in the feedback shared on their profiles.</p>
+                  </span>
+                  <span>
+                 <h3>Fast bids</h3>
+                 <p> Get quick, no-obligation quotes from skilled freelancers. 80% of 
+                    jobs receive bids within 60 seconds. Your idea is just moments from reality.</p>
+                  </span>
+              </div>
+
+              <div class="d-flex gap-4 my-3">
+                <span>
+                  <h3>Quality Work</h3>
+                  <p>With Freelancer's talent pool of over 60 million professionals
+                     at your fingertips, you'll find quality talent to get what you need done.</p>
+                    </span>
+                <span>
+                 <h3>Be in Control</h3>
+                 <p> Stay in the loop while on the move. Chat with your freelancers and get real time updates 
+                  with our mobile app. Anytime, anywhere.</p>
+                </span>
+              </div>
+              <h1 >Make your dreams a reality. </h1>
+                <p style="color: rgb(230,2,120); font-size: 20px;">Get started now<i class="fa-solid fa-arrow-right mx-2"></i></p>
+            </div>
+
+            <div>
+              <img class="cards" src="https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-cards-ld.png" alt="">
+            </div>
+          </div>
+
+          <div class="page3 d-flex align-items-center my-5 row w-100" style="height: 100vh;">
+            <div class="col-12 col-md-6 text-end ladyart" style="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/ai-generated-art-v2.jpg" style=" height: 500px; width: 600px;" class="ladyartimg" alt="">
+              <div class="label1 text-start">
+                <div class="d-flex justify-content-between">
+                <p>A generated art <br> $200USD in 7 days</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
               </div>
             </div>
-            <div class="wj">
-              <p class="d-flex justify-content-between text-center align-items-center">Find website job <i class="fa-solid fa-chevron-right "></i></p>
-              <div class="wjdropdown bg-light text-dark">
-                <p>Find PHP job</p>
-                <p>Find Javascript job</p>
-                <p>Find .NET job</p>
-                <p>Find CSS jobs</p>
-                <p>Find amazon web service job</p>
-                <p>Find illustration job</p>
-                <p>Find 3d animation job</p>
-                <p>Find 2d animation job</p>
-                <p>Find other graphic design job</p>
+
+            <div class="smallmgs d-flex col-12 col-md-6 flex-wrap gap-1">
+
+              <div class="contimg1">
+              <img class="smimage1 " src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/wordpress-website-v2.jpg" width="300px" height="250px" alt="">
+                <div class="label2 text-start ">
+                  <div class="d-flex justify-content-between">
+                  <p style="font-size: small;">Wordpress website. <br> $125 USD in 1 day.</p>
+                  <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+                </div>
+                </div>
+              </div>
+
+              <div class="contimg2">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/interior-3d-model-v2.jpg" width="300px" height="250px" alt="">
+              <div class="label2 text-start ">
+                <div class="d-flex justify-content-between">
+                <p style="font-size: small;">Interior 3D model. <br>$350 USD in 7 days.</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
               </div>
             </div>
-            <div class="appdev">
-              <p>Find mobile app development job</p>
-              <div class="appdevdropdown bg-light text-dark">
-                <p>Find IPhone app job</p>
-                <p>Find Android app job</p>
-                <p>Find Flutter job</p>
-                <p>Find Xamarine jobs</p>
-                <p>Find PhoneGap service job</p>
-                <p>Find other mobile app development jobs</p>
-                <p>Find 3d animation job</p>
-            </div>
-            </div>
-              <p>Find software development job</p>
-              <p>Find internet marketing job</p>
-              <p>Find data entry job</p>
-              <p>Find SEO job</p>
-              <p>Find writing job</p>
-              <p>Find legal job</p>
-              <p>Find finance job</p>
-              <p>Find manufacturing job</p>
-              <p>Find logistics job</p>
-            </div>
-      </div>
 
-      <div class="bl">
-        <p class="d-flex justify-content-between align-items-center">By Language <i class="fa-solid fa-chevron-right "></i></p>
-        <div class="bldropdown bg-light text-dark">
-          <p>Find freelance job in English</p>
-          <p>Find freelance job in Spanish</p>
-          <p>Find freelance job in Portugese</p>
-          <p>Find freelance job in French</p>
-          <p>Find freelance job in German</p>
-          <p>Find freelance job in other languages</p>
+            <div class="contimg3">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/packaging-design-v2.jpg" width="300px" height="250px" alt="">
+                <div class="label2 text-start ">
+                  <div class="d-flex justify-content-between">
+                  <p style="font-size: small;">Interior 3D model. <br>$350 USD in 7 days.</p>
+                  <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+                </div>
+                </div>
+              </div>
+
+              <div class="contimg4">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/mobile-app-v2.jpg" width="300px" height="250px" alt="">
+              <div class="label2 text-start ">
+                <div class="d-flex justify-content-between">
+                <p style="font-size: small;">Interior 3D model. <br>$350 USD in 7 days.</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+         
+
+          <div class="page4 row w-100 ">
+            <div class="bg4">
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/global-talent/global-talent-bg-ld.jpg" alt="" class="pg4img w-100" >
+            <img class="card2" src="https://www.f-cdn.com/assets/main/en/assets/home/global-talent/global-talent-cards-ld.png" alt="">
+          </div>
+
+            <div class="text4">
+              <h1 style="font-size:60px; font-weight:700;">Tap into a </h1>
+              <h1 style="color: rgb(230,2,120); font-size:60px; font-weight: 700;" >global talent network</h1>
+              <div class="d-flex gap-4"> 
+                <span>
+                  <h3>Post your job</h3>
+                  <p>It's free and easy! Get lots of competitive bids that suit your budget in minutes.
+                     Start making your dreams reality.</p>
+                  </span>
+                  <span>
+                 <h3>Choose freelancers</h3>
+                 <p> No job is too big or complex. We've got freelancers for jobs of any size or budget, across 2700+ skills.
+                   Let our talent bring your ideas to life.</p>
+                  </span>
+              </div>
+
+              <div class="d-flex gap-4 my-3">
+                <span>
+                  <h3>Pay safely</h3>
+                  <p>Only pay for work when you are 100% satisfied with the outcome. Our milestone payment system protects
+                     you every step of the way.</p>
+                    </span>
+                <span>
+                 <h3>We're here to help</h3>
+                 <p> Your time is precious. Let our team of expert recruiters and co-pilots 
+                  save you time finding talent, even managing your job if needed.</p>
+                </span>
+              </div>
+              <h1>Create the future. </h1>
+                <p style="color: rgb(230,2,120); font-size: 20px;">Get started now<i class="fa-solid fa-arrow-right mx-2"></i></p>
+            </div>
+         
+          </div>
+
+          <!-- ANOTHER PAGE -->
+          
+          
+        <div class="page5 row w-100 my-5 flex-wrap">
+          <div class="d-flex divlogo2 align-items-center text-center  p-5 flex-wrap w-100">
+            <div class="d-flex logo2 align-items-center justify-content-between p-4">
+              <div class="text-light">As seen on </div>
+              <img style="" src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/the-new-york-times-darkmode.svg" alt="">
+              <img style="" src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/cnbc-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/wall-street-journal-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/cnn-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/bloomberg-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/yahoo-finance-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/business-insider-darkmode.svg" alt="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/as-seen-on/forbes-darkmode.svg" alt="">
+            </div>
+          </div>
+
+            <div class="d-flex flex-column-reverse flex-md-row  my-5 flex-wrap  w-100 justify-content-center">
+            <div class="d-flex col-12 col-md-6 flex-wrap gap-1 smallmgs2" style="padding-left: 50px;">
+
+              <div class="contimg5">
+              <img class="" src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/product-3d-modelling-v2.jpg" width="300px" height="200px" alt="">
+                <div class="labelsm text-start">
+                  <div class="d-flex justify-content-between">
+                  <p style="font-size: small;">Product 3D modelling. <br> $430 USD in 3 weeks.
+                    </p>
+                  <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+                </div>
+                </div>
+              </div>
+
+              <div class="contimg6">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/book-cover-design-v2.jpg" width="300px" height="200px" alt="">
+              <div class="labelsm text-start">
+                <div class="d-flex justify-content-between">
+                <p style="font-size: small;">Book cover design.<br>$25 USD in 3 days.</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
+              </div>
+            </div>
+
+            <div class="contimg7">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/album-cover-v2.jpg" width="300px" height="200px" alt="">
+                <div class="labelsm text-start">
+                  <div class="d-flex justify-content-between">
+                  <p style="font-size: small;">Album cover.<br> $110 USD in 9 days.
+                    </p>
+                  <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+                </div>
+                </div>
+              </div>
+
+              <div class="contimg8">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/ai-generated-illustration-v3.png" width="300px" height="200px" alt="">
+              <div class="labelsm text-start ">
+                <div class="d-flex justify-content-between">
+                <p style="font-size: small;">Delivery small parcel project.<br> $50 USD in 1 day.</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 text-start catart" style="">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/character-illustration-v2.jpg" style="width: 600px; height: 400px;" alt="">
+              <div class="labelcat text-start ">
+                <span class="d-flex justify-content-between">
+                <p>Character illustration.<br>$60 USD in 5 days.</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <p>Featured Jobs</p>
-        <p>Find Contests</p>
-    </div>
-    </div>
-    </div>
 
-    <div class="btn2">
-      <button class=" btn btn-dark">Hire Freelancer</button>
-      <div class="btn2drop bg-light text-dark">
-        <div class="skills">
-        <p>By Skills</p>
-        <div class="skillsdrop bg-light text-dark">
-          <div class="graphics ">
-          <p class="d-flex justify-content-between text-center align-items-center"> Hire Graphic Designers<i class="fa-solid fa-chevron-right "></i></p>
-          <div class="graphicsdrop bg-light text-dark">
-              <p>Hire Photoshop Designers</p>
-              <p>Hire Illustrators</p>
-             <p> Hire Motion Graphics Designers</p>
-              <p>Hire 2D Animators</p>
-              <p>Hire 3D Animators</p>
-              <p>Hire Business Card Designers</p>
-             <p> Hire Tattoo Designers</p>
-              <p>Hire Stationery Designers</p>
-              <p>Hire Packaging Designers</p>
-             <p> Hire Fashion Designers</p>
-             <p> Hire Brochure Designers</p>
-              <p>Hire T-Shirt Designers</p>
-              <p>Hire Other Graphic Designers</p>
+
+        <section style="height: 100vh; color: white;" class="page6 row w-100 p-5 d-flex">
+          <div class="col-12 col-md-4 div1pg6">
+           <h1 style="font-size: 50px; font-weight: 700;"> Get work done <span style="color: rgb(230,2,120);">in over 2700</span> dipg7diverent categories</h1>
+          </div>
+          <div class="col-10 col-md-8 d-flex justify-content-around">
+          <div class="col-10 col-md-2 ttt">
+           <p> Website Design</p>
+           <p> Mobile Apps</p>
+           <p>  Android Apps</p>
+            <p> iPhone Apps</p>
+            <p>  Software Architecture</p>
+            <p>  Graphic Design</p>
+            <p>   Logo Design</p>
+            <p>  Public Relations</p>
+            <p>  Logistics</p>
+            <p>  Proofreading</p>
+           <p>  Translation</p>
+           <p>  Research</p>
           </div>
 
-          <p>Hire Logo Designers</p>
+          <div class="col-10 col-md-2 ttt">
+            <p>Research Writing</p>
+            <p>Article Writing</p>
+           <p> Web Scraping</p>
+           <p> HTML</p>
+           <p>CSS</p>
+            <p> HTML 5</p>
+              <p> Javascript</p>
+                <p>Data Processing</p>
+                  <p>  Python</p>
+                    <p> Wordpress</p>
+            <p>  Web Search</p>
+              <p> Finance</p>
           </div>
 
-          <div class="hiregd">
-          <p class="d-flex justify-content-between text-center align-items-center">Hire 3D Graphic Designers<i class="fa-solid fa-chevron-right "></i></p>
-            <div class="hiregddrop bg-light text-dark">
-              <p>Hire 3D Modelers</p>
-              <p>Hire 3D Renderers</p>
-              <p>Hire Other 3D Graphic Designers</p>
-            </div>
-            </div>
-
-            <div class="hireweb">
-          <p class="d-flex justify-content-between text-center align-items-center">Hire Web Designers<i class="fa-solid fa-chevron-right "></i></p>
-          <div class="hirewebdrop bg-light text-dark">
-            <p>Hire Wordpress Web Designers</p>
-           <p> Hire Squarespace Web Designers</p>
-            <p>Hire Wix Web Designers</p>
-            <p>Hire Shopify Web Designers</p>
-            <p>Hire Magento Web Designers</p>
-            <p>Hire Other Web Designers</p>
-          </div>
+          <div class="col-10 col-md-2 ttt">
+          <p>  Manufacturing</p>
+          <p>  Data Entry
+            <p>  Content Writing
+              <p>  Marketing
+                <p>    Excel
+                  <p>   Ghostwriting
+                    <p>   Copywriting
+                      <p>   MySQL
+                        <p>   C++ Programming
           </div>
 
-          <div class="webdev">
-          <p class="d-flex justify-content-between text-center align-items-center">Hire Web Developers<i class="fa-solid fa-chevron-right "></i></p>
-          <div class="webdevdrop bg-light text-dark">
-           <p> Hire PHP Web Developers</p>
-           <p>Hire HTML5 Web Developers</p>
-           <p> Hire CSS Web Developers</p>
-           <p>Hire Javascript Web Developers</p>
-           <p>Hire Ruby on Rails Web Developers</p>
-           <p>>Hire node.js Web Developers</p>
-           <p>Hire Angular.js Web Developers</p>
-           <p> Hire React.js Web Developers</p>
-           <p>Hire Other Web Developers</p>
+          <div class="col-10 col-md-2 ttt">
+            <p>   Link Building
+            <p>  C# Programming
+            <p>   PHP
+            <p>   3D Modelling
+            <p>   Photoshop
+           <p>   Technical Writing
+            <p>   Blogging
+          <p>   Internet Marketing
+              <p>   eCommerce
+          <p style="color: rgb(230,2,120);">  View more<i class="fa-solid fa-arrow-right mx-2"></i></p>
           </div>
         </div>
+        </section>
         
-        <div class="mobdev">
-          <p class="d-flex justify-content-between text-center align-items-center">Hire Mobile App Developers<i class="fa-solid fa-chevron-right "></i></p>
-          <div class="mobdevdrop bg-light text-dark">
-            <p>Hire iPhone Mobile App Developers</p>
-            <p>Hire Android Mobile App Developers</p>
-            <p>Hire PhoneGap Mobile App Developers</p>
-            <p>Hire Flutter Mobile App Developers</p>
-            <p>Hire Xamarin Mobile App Developers</p>
-            <p>Hire Other Mobile App Developers</p>
+
+        <section class="page7">
+          <img class="w-100 pg7bg" style="height: 120vh;" src="https://www.f-cdn.com/assets/main/en/assets/home/ai-business/ai-business-bg-ld.jpg" alt="">
+          <img class="card3" src="https://www.f-cdn.com/assets/main/en/assets/home/ai-business/ai-business-cards-ld.png" alt="">
+
+          <div class="pg7text">
+            <h1 style="font-size: 55px;font-weight: 700;">Get your business</h1>
+            <h1 style="color: rgb(230,2,120); font-size: 55px;font-weight: 700;">ready for AI</h1>
+            <div class="d-block d-md-flex gap-4 pg7div"> 
+              <span >
+                <h3>Top AI specialists</h3>
+                <p class="fs-5">Unlock access to thousands of AI specialists across every technology.
+                   Ensure your business thrives in the new AI-powered world.</p>
+                </span>
+                <span>
+               <h3>Get better results</h3>
+               <p class="fs-5"> Our freelancers are supercharging their workflows with AI. 
+                Evolve your business by combining the best of AI and human talent.</p>
+                </span>
+            </div>
+
+            <div class="d-block d-md-flex gap-5 py-4 pg7div"> 
+              <span>
+                <h3>Build & train your own</h3>
+                <p class="fs-5">Building a world-class gen-AI product?
+                   Tap into our global workforce for expert advice, help training models and much more.</p>
+                </span>
+                <span>
+               <h3>AI makes it easy</h3>
+               <p class="fs-5"> Attracting top talent has never been so easy.
+                 Just tell us what you need done and our advanced AI will help guide you through the process.</p>
+                </span>
+            </div>
+            <h1 >Is your business AI-ready? </h1>
+            <p style="color: rgb(230,2,120); font-size: 20px;">Learn more<i class="fa-solid fa-arrow-right mx-2"></i></p>
           </div>
-        </div>
-          <p>Hire Writers</p>
-        <p>Hire Internet Marketing Specialists</p>
-        <p>Hire SEO Specialists</p>
-        <p>Hire Data Entry Clerks</p>
-        <p>Hire Virtual Assistance</p>
-        </div>
-      </div>
-      <div class="location">
-        <p>By Location</p>
-        <div class="locationdrop bg-light text-dark">
-          <p>Hire Freelancers in the United States</p>
-          <p>Hire Freelancers in the United Kingdom</p>
-          <p>Hire Freelancers in Canada</p>
-          <p>Hire Freelancers in India</p>
-         <p>Hire Freelancers in Australia</p>
-          <p>Hire Freelancers in Pakistan</p>
-          <p>Hire Freelancers in Bangladesh</p>
-         <p> Hire Freelancers in Indonesia</p>
-          <p>Hire Freelancers in Brazil</p>
-          <p>Hire Freelancers in China</p>
-         <p> Hire Freelancers in Turkey</p>
-        <p> Hire Freelancers in the Philippines</p>
-        </div>
+        </section>
 
-      <p>Skills categories</p>
-    </div>
-    </div>
-    </div>
-    <div class="btn3">
-      <button  class="btn btn-dark mx-5">Get ideas</button>
-      <div class="btn3drop bg-light text-dark">
-       <p> Get Web Design Ideas</p>
-       <p>Get Mobile App Ideas</p>
-        <p>Get Graphic Design Ideas</p>
-        <p>Get Logo Design Ideas</p>
-        <p>Get 3D Modelling Ideas</p>
-        <p>Get Illustration Ideas</p>
-        <p>Get Branding Ideas</p>
-        <p> Get Product Design Ideas</p>
-          <p>Get Package Design Ideas</p>
-            <p> Get Wordpress Ideas</p>
-      </div>
-    </div>
-    <div class="btn4">
-      <button  class="btn btn-dark">About</button>
-      <div class="btn4drop bg-light text-dark">
-        <p>Enterprise</p>
-        <p>Membership</p>
-        <p>Preferred Freelancer Program</p>
-        <p>Get Verified</p>
-      </div>
-    </div>
+        <section class="d-flex align-items-center my-5 flex-wrap row w-100 page8" style="height: 100vh;">
+          <div class="col-12 col-md-6 text-end ladyart"  style="">
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/architectural-design-v2.jpg" style="width: 600px; height: 500px;" class="ladyartimg" alt="">
+            <div class="label1 text-start ">
+              <div class="d-flex justify-content-between">
+              <p>Architectural design.<br> $500USD in 30 days</p>
+              <button style="background-color: rgb(230,2,120); color: white; height: fit-content;" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+            </div>
+            </div>
+          </div>
 
-    <div class="btn5">
-      <button class="btn btn-dark mx-5">Resources</button>
-      <div class="btn5drop bg-light text-dark">
-        <p></p>What Is Adobe Photoshop
-        <p></p>What Is Android App Development
-        <p></p>What Is Article Writing
-        <p> What Is Data Entry
-        <p>What Is Graphic Design
-        <p> What is HTML
-        <p> What Is Internet Marketing
-       <p>What Is iPhone App Development
-        <p>What Is JavaScript
-       <p>What Is Logo Design
-        <p>What Is Mobile App Development
-        <p>What Is PHP
-        <p>What Is Python
-        <p>What Is Software Architecture
-        <p>What Is Web Design
-        <p>What Is WordPress
-      </div>
-    </div>
-    </div>
- 
-   
-<!-- <div style="">
-  <video autoplay muted>
-    <source src="house-v3.mp4" type="">
-  </video>
+          <div class="smallmgs d-flex col-12 col-md-6 flex-wrap gap-1">
+
+            <div class="contimg1">
+            <img class="smimage1" src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/video-production-v2.jpg" width="300px" height="250px" alt="">
+              <div class="label2 text-start ">
+                <div class="d-flex justify-content-between">
+                <p style="font-size: small;">Video production. <br>$1960 USD in 30 days.</p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
+              </div>
+            </div>
+
+            <div class="contimg2">
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/shopify-website-v2.jpg" width="300px" height="250px" alt="">
+            <div class="label2 text-start ">
+              <div class="d-flex justify-content-between">
+              <p style="font-size: small;">Shopify website. <br>$300 USD in 7 days.</p>
+              <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+            </div>
+            </div>
+          </div>
+
+          <div class="contimg3">
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/ai-generated-image-v3.png" width="300px" height="250px" alt="">
+              <div class="label2 text-start ">
+                <div class="d-flex justify-content-between">
+                <p style="font-size: small;">Handyman Projects. <br>$100 USD </p>
+                <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+              </div>
+              </div>
+            </div>
+
+            <div class="contimg4">
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorites/v2/seo-expert-v2.jpg" width="300px" height="250px" alt="">
+            <div class="label2 text-start ">
+              <div class="d-flex justify-content-between">
+              <p style="font-size: small;">SEO expert. <br> $100 USD in 3 days.</p>
+              <button style="background-color: rgb(230,2,120); color: white; height: fit-content;font-size: small; width" class="btn btn">Discover more<i class="fa-solid fa-arrow-right mx-2"></i></button>
+            </div>
+            </div>
+          </div>
+
+          </div>
+        </section>
+
+        <section class="page9 w-100" style="height: 120vh;">
+          <!-- <img class="w-100" src="https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/enterprise-upsell-v5-desktop-test.jpg" alt="" style="height: 100vh;"> -->
+          <div class="pg9text">
+            <h1 style="font-size: 55px;font-weight: 700;">Power your organisation's</h1>
+            <h1 style="color: rgb(230,2,120); font-size: 55px;font-weight: 700;">competitive advantage</h1>
+
+            <span class="px-5">
+              <h3>Freelancer Enterprise</h3>
+              <p class="fs-5">Company budget? Get more done for less. Use our
+                 workforce of millions to help your business achieve more.</p>
+                 <p style="color: rgb(230,2,120); font-size: 20px;">View more<i class="fa-solid fa-arrow-right mx-2"></i></p>
+              </span>
+              <span>
+             <h3>Freelancer API</h3>
+             <p class="fs-5"> Millions of professionals on demand. 
+              Why hire people when you can simply integrate our talented cloud workforce instead?</p>
+               <p style="color: rgb(230,2,120); font-size: 20px;">View more<i class="fa-solid fa-arrow-right mx-2"></i></p>
+              </span>
+          </div>
+        </section>
+
+        <section class="w-100 p-5" style="background-color: rgb(18,21,27);">
+          <div class="footer d-flex flex-wrap container w-100" style="height: 100vh; padding: 10px 0;color: white;">
+            <div class="col-12 col-md-2 ft">
+              <img class="w-50" src="freelancer-logo.svg" alt="">
+              <p style="padding: 5px 0;"><i class="fa-solid fa-globe p-1"></i>US (International) / English </p>
+              <p style="padding: 5px 0;"><i class="fa-solid fa-question p-1 bg-light text-dark text-center" style="border-radius: 100%; height: 18px; width: 18px; font-size: small;"></i>Help & Support</p>
+              <p style="padding: 5px 0;"><i class="fa-solid fa-person p-1"></i>Accessibility</p>
+            </div>
+            <div class="col-12 col-md-2 ftdivs">
+              <h5>Freelancer</h5>
+              <p>Categories</p>
+              <p> Projects</p>
+              <p> Contests</p>
+              <p>  Freelancers</p>
+              <p> Enterprise</p>
+              <p> Membership</p>
+              <p> Preferred Freelancer Program</p>
+              <p> Project Management</p>
+              <p> Local Jobs</p>
+              <p>  Photo Anywhere</p>
+              <p>  Showcase</p>
+              <p>  API for Developers</p>
+              <p>  Get Verified</p>
+              <p> Desktop App</p>
+            </div>
+            <div class="col-12 col-md-2 ftdivs">
+              <h5>About</h5>
+              <p>About us</p>
+              <p>How it Works</p>
+              <p>Security</p>
+              <p>Investor</p>
+              <p>Sitemap</p>
+              <p>Stories</p>
+              <p> News</p>
+              <p>Team</p>
+              <p>Awards</p>
+              <p>Press Releases</p>
+              <p>Careers</p>
+            </div>
+            <div class="col-12 col-md-2 ftdivs">
+              <h5>Terms</h5>
+             <p> Privacy Policy</p>
+             <p> Terms and Conditions</p>
+              <p> Copyright Policy</p>
+              <p> Code of Conduct</p>
+              <p> Fees and Charges</p>
+            </div>
+            <div class="col-12 col-md-2 ftdivs">
+             <h5> Partners</h5>
+              <p>Escrow.com</p>
+              <p>Loadshift</p>
+              <p> Warrior Forum</p>
+            </div>
+            <div class="col-12 col-md-2 ftdivs">
+              <h5>Apps</h5>
+              <p><img src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg" alt=""></p>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg" alt="">
+              <div class="my-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter px-2"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram px-2"></i>
+                <i class="fa-solid fa-wifi"></i>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between container text-light flex-wrap">
+            <p>72,218,930 <br> Registered Users</p>
+            <p>23,576,021 <br>Total Jobs Posted</p>
+            <p style="font-size: 10px;">Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759) <br>
+              Copyright © 2024 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+          </div>
+        </section>
+
+      
   
-</div> -->
 
-
-<div id="carouselExampleFade" style="height: 90vh;" class="carousel slide carousel-fade" data-bs-ride="carousel" >
-  <div class="carousel-inner" style="height: 90vh; z-index: -1;">
-
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/mobile-phone-1080.jpg" style="height: 90vh; width: 100vw;" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>SLIDE 1</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="1000">
-      <img  src="https://www.f-cdn.com/assets/main/en/assets/home/hero/mobile-phone-850.jpg" style="height: 90vh;" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>SLIDE 2</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="1000">
-      <img style="height: 100vh;" src="https://www.f-cdn.com/assets/main/en/assets/home/hero/mobile-phone-mobile.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>SLIDE 3</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/ai-contest-1080.jpg" class="d-block w-100" style="height: 90vh;" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>SLIDE 4</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="15000">
-      <video autoplay muted>
-        <source src="https://www.f-cdn.com/assets/main/en/assets/home/video/house-v3.mp4" type="">
-      </video>
-      <div class="carousel-caption d-none d-md-block">
-        <p>This architectural design cost $500 USD and took 15 days</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="20000">
-      <video src="https://www.f-cdn.com/assets/main/en/assets/home/video/nasa-v3.mp4" autoplay muted></video>
-      <div class="carousel-caption d-none d-md-block">
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/house-1080.jpg" style="height: 90vh;" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="https://www.f-cdn.com/assets/main/en/assets/home/hero/nasa-1080.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-  
-    <div class="carousel-item" data-bs-interval="20000">
-      <video src="https://www.f-cdn.com/assets/main/en/assets/home/video/ai-contest-hero.mp4" autoplay muted></video>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button> -->
-</div>
-
-
-
-
-   
-
-   
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<!-- <script>
-  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script> -->
-<script src="stylesheet" href="bootstrap5/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
