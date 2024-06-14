@@ -470,24 +470,15 @@ body{
  .divPOne{
   position: relative;
   z-index: -1;
+  width: 100%;
   object-fit: cover;
 } 
-/* .carousel{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  z-index: -1;
-}  */
 .text{
   position: absolute;
   top: 100px;
   left: 50px;
   color: white;
   width: 40%;
- 
 }
 .text > p{
   font-size: 60px;
@@ -659,15 +650,12 @@ body{
 
 .catart{
   position: relative;
-  /* display: inline-block; */
-  /* overflow: hidden; */
 }
 .catart:hover{
   z-index: 1;
 }
 .labelcat{
   position: absolute;
-  /* bottom: 0px; */
   left: px;
   background-color: white;
   padding: 5px;
@@ -686,12 +674,10 @@ body{
   z-index: 5;
 }
 .catart:hover .labelcat{
-  /* opacity: 1; */
   display: block;
 }
 .contimg5{
   position: relative;
-  /* z-index: 3; */
 }
 .contimg5:hover{
   z-index: 1;
@@ -749,7 +735,6 @@ body{
 }
 .contimg8{
   position: relative;
-  /* z-index: 3; */
 }
 .contimg8:hover{
   z-index: 1;
